@@ -1,0 +1,112 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: $zheader;
+    color: $white;
+    &--nav {
+        position: relative;
+        width: 100%;
+        &.is-scroll {
+            &:before {
+                height: 100%;
+            }
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 6px;
+            background-color: $turquoise;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            transition: height .22s ease;
+        }
+        &-inner {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include fluid(padding-top padding-bottom, 320px, 1366px, 10px, 20px);
+            @include fluid(padding-right padding-left, 320px, 1366px, 10px, 15px);
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                @include fluid(margin-right, 1000px, 1366px, 5px, 30px);
+            }
+            &_mail {
+                svg {
+                    position: relative;
+                    top: 2px;
+                    width: 32px;
+                    fill: $white;
+                }
+            }
+            &_logo {
+                img {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            a {
+                color: inherit;
+                font-weight: 500;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                white-space: nowrap;
+                position: relative;
+                @include fluid(font-size, 320px, 1366px, 14px, 21px);
+                @include fluid(letter-spacing, 320px, 1366px, 1px, 4.2px);
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 90%;
+                    height: 2px;
+                    position: absolute;
+                    top: 100%;
+                    left: 1%;
+                    transition: all .22s ease;
+                    border-radius: 2px;
+                    background-color: rgba($white, 0);
+                }
+                &:hover,
+                &:focus {
+                    &:after {
+                        left: 5%;
+                        background-color: rgba($white, .9);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        position: absolute;
+        &--nav {
+            &-inner {
+                flex-direction: column;
+            }
+            &-item {
+                &_logo {
+                    width: 100%;
+                    a {
+                        width: 100%;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    img {
+                        margin: 0 auto 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

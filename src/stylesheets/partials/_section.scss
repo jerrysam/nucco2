@@ -1,0 +1,15 @@
+.section {
+    @include fluid(padding-top, 320px, 1366px, 30px, 100px);
+    @include fluid(padding-bottom, 320px, 1366px, 20px, 90px);
+    width: 100%;
+    float: left;
+    clear: both;
+    &_dark {
+        color: $white;
+        background-color: $grey;
+    }
+    &_light {
+        color: $grey;
+        background-color: $white;
+    }
+}

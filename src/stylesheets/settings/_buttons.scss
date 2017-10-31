@@ -1,0 +1,17 @@
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+    padding: 16px 18px 15px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    text-decoration: none;
+    color: inherit;
+    transition: all .22s ease;
+    &:hover {
+        color: $turquoise;
+        border-color: $turquoise;
+    }
+}

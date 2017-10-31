@@ -1,0 +1,83 @@
+.horizontalsection {
+    width: 100%;
+    @include fluid(min-height, 320px, 1366px, 180px, 330px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local;
+    text-align: center;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        width: 100%; height: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,0.2+51,0.3+100 */
+        background: -moz-linear-gradient(top, rgba($black, 0.3) 0%, rgba($black, 0.2) 51%, rgba($black, 0.3) 100%);
+        background: -webkit-linear-gradient(top, rgba($black, 0.3) 0%, rgba($black, 0.2) 51%, rgba($black, 0.3) 100%);
+        background: linear-gradient(to bottom, rgba($black, 0.3) 0%, rgba($black, 0.2) 51%, rgba($black, 0.3) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=0);
+        z-index: 10;
+    }
+    &--title {
+        @include fluid(font-size, 320px, 1366px, 20px, 36px);
+        @include fluid(margin-bottom, 320px, 1366px, 16px, 26px);
+        font-weight: 500;
+        position: relative;
+        z-index: 20;
+    }
+    &--text {
+        @include fluid(font-size, 320px, 1366px, 14px, 20px);
+        @include fluid(margin-bottom, 320px, 1366px, 15px, 23px);
+        font-weight: 500;
+        line-height: 1.95;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 20;
+    }
+    .btn {
+        font-weight: 500;
+        letter-spacing: 1.6px;
+        padding: 14px 29px 13px;
+        @include fluid(font-size, 320px, 1366px, 14px, 16px);
+        text-decoration: none;
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+    &_awards {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+            flex: 0 0 100;
+            margin: 10px;
+            z-index: $awardsImg;
+        }
+    }
+    &--quote,
+    &--author {
+        font-family: 'TheSansOsF';
+        text-align: left;
+        text-transform: none;
+        font-weight: 600;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 20;
+    }
+    &--quote {
+        @include fluid(font-size, 320px, 1366px, 18px, 23px);
+        font-style: italic;
+        line-height: 1.2;
+    }
+    &--author {
+        @include fluid(font-size, 320px, 1366px, 14px, 18px);
+        line-height: 1.67;
+    }
+}

@@ -1,0 +1,104 @@
+.footer {
+    width: 100%;
+    float: left;
+    color: $white;
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &--top {
+        @include fluid(padding-top, 320px, 1366px, 30px, 100px);
+        @include fluid(padding-bottom, 320px, 1366px, 20px, 90px);
+        background-color: $grey;
+        color: $white;
+    }
+    &--col {
+        width: 33%;
+        &:not(:last-child) {
+            @include fluid(margin-right, 320px, 1366px, 20px, 70px);
+        }
+        &_blog {
+            img {
+                display: block;
+                @include fluid(width, 320px, 1366px, 140px, 280px);
+            }
+        }
+        &_newsletter {
+            .btn {
+                border-color: $turquoise;
+            }
+        }
+        &_details {
+            @include fluid(margin-right, 320px, 1366px, 14px, 16px);
+            @include fluid(line-height, 320px, 1366px, 1.5, 2.44);
+            font-weight: 500;
+            text-align: right;
+        }
+    }
+    &--bottom {
+        padding: 70px 0 60px;
+        background-color: $dark;
+        p {
+            font-weight: 500;
+            text-align: center;
+            @include fluid(font-size, 320px, 1366px, 16px, 18px);
+        }
+    }
+    &--icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-top: 20px;
+        li {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+        a {
+            display: block;
+            &:hover {
+                svg {
+                    fill: $turquoise;
+                }
+            }
+            svg {
+                display: block;
+                max-width: 40px;
+                width: 100%;
+                fill: #fff;
+                transition: fill .22s ease;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        &--top {
+            .wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &--col {
+            margin-right: 0!important;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &_newsletter {
+                order: 1;
+            }
+            &_blog {
+                order: 2;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            &_details {
+                order: 3;
+            }
+        }
+    }
+}

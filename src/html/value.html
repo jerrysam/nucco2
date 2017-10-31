@@ -1,0 +1,49 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  {% set topsection = { title: "<span>It can be hard enough to</span><span>make someone hear you, until you craft</span><span>that message into a story</span>" } %}
+  {% include "partials/topsection.html" %}
+
+  <section class="section section_light basicsection">
+    <div class="wrapper">
+      <h3>Let's make it worth repeating</h3>
+      <p>
+          Stories stand the test of time for a reason - they weave their way into our minds like no other method of transmitting information has ever done. So when you need to be making your external stakeholders stand up and take note of the evolution of your business, you need a story they'll leverage and pass on. We want to help you do that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively.
+      </p>
+    </div>
+  </section>
+
+  {% include "partials/worksection.html" %}
+
+  {% set theme = { bg: 'dark' } %}
+  {% set horizontalsection = {  type: 'quote',
+                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
+                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                                bg: 'images/breaker5.jpg'
+                             }
+  %}
+  {% include "partials/horizontalsection.html" %}
+  
+  {% set theme = { bg: 'dark' } %}
+  {% include "partials/corporatepartner.html" %}
+
+  {% set theme = { bg: 'dark' } %}
+  {% set horizontalsection = { bg: 'images/breaker4.jpg' } %}
+  {% include "partials/horizontalsection.html" %}
+
+  <section class="section section_light clientsection">
+    <div class="wrapper">
+      <h4>Our partners</h4>
+      <p>
+         A sentence or two to go here talking about the clients we work with. Lorem ipsum dolor sit amet, 
+         consectetuer adipiscing elit, sed diam nonummy nibh euismodt.
+      </p>
+      <img draggable="false" src="images/client_logos.jpg" alt="">
+    </div>
+  </section>
+
+  {% include "shared/awards.html" %}
+
+  {% include "shared/contact.html" %}
+
+{% endblock %}

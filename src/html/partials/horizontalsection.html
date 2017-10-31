@@ -1,0 +1,16 @@
+<section class="section section_{{theme.bg}} horizontalsection" data-paroller-factor="0.2" style="background-image: url({{horizontalsection.bg}});">
+
+    {% if horizontalsection.type == 'quote' %}
+
+        <p class="horizontalsection--quote">{{horizontalsection.quote}}</p>
+        <span class="horizontalsection--author">{{horizontalsection.author}}</span>
+
+    {% else %}
+
+        {% if horizontalsection.title %} <h3 class="horizontalsection--title">{{horizontalsection.title}}</h3> {% endif %}
+        {% if horizontalsection.subtitle %} <p class="horizontalsection--text">{{horizontalsection.subtitle}}</p> {% endif %}
+        {% if horizontalsection.button %} <a class="btn" href="javascript:;">{{horizontalsection.button}}</a> {% endif %}
+
+    {% endif %}
+
+</section>

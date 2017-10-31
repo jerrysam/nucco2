@@ -1,0 +1,64 @@
+.contactsection {
+    width: 100%;
+    text-align: center;
+    &--title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 48px;
+    }
+    &--description {
+        font-family: 'TheSansOsF';
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: 0.2px;
+    }
+    .row {
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+    &--details {
+        list-style: none;
+        line-height: 30px;
+        text-align: left;
+        margin-right: 60px;
+        flex-shrink: 0;
+        @include fluid(font-size, 320px, 1366px, 14px, 20px);
+        a {
+            text-decoration: none;
+            color: $turquoise;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            margin-right: 0;
+            &-item {
+                float: left;
+                width: calc(50% - 10px);
+                &:nth-child(1),
+                &:nth-child(3) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    &--map {
+        flex-grow: 1;
+        flex-shrink: 1;
+        img {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+    }
+}
