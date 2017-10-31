@@ -1,0 +1,16 @@
+{
+  "name": "nucco-design",
+  "version": "1.0.0",
+  "description": "Nucco static site development",
+  "author": "Studio XXII",
+  "scripts": {
+    "start": "yarn run blendid",
+    "build": "yarn run blendid -- build",
+    "deploy": "cd public/ && now --static --public"
+  },
+  "dependencies": {
+    "blendid": "^4.3.1",
+    "jquery": "^3.2.1",
+    "paroller.js": "^1.2.0"
+  }
+}
