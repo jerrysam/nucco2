@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Nucco static site development",
   "author": "Mika Labs",
+  "homepage": "http://snchvn.github.io"
   "scripts": {
     "start": "yarn run blendid",
     "build": "yarn run blendid -- build",
