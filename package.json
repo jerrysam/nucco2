@@ -2,7 +2,7 @@
   "name": "nucco-design",
   "version": "1.0.0",
   "description": "Nucco static site development",
-  "author": "Studio XXII",
+  "author": "Mika Labs",
   "scripts": {
     "start": "yarn run blendid",
     "build": "yarn run blendid -- build",
