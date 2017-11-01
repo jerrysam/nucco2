@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Nucco static site development",
   "author": "Mika Labs",
-  "homepage": "http://snchvn.github.io"
+  "homepage": "http://snchvn.github.io",
   "scripts": {
     "start": "yarn run blendid",
     "build": "yarn run blendid -- build",
@@ -13,5 +13,8 @@
     "blendid": "^4.3.1",
     "jquery": "^3.2.1",
     "paroller.js": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
   }
 }

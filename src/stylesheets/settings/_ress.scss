@@ -9,6 +9,10 @@
    # Global selectors
    # ================================================================= */
 
+body {
+    background-color: $turquoise;
+}
+
 html {
     box-sizing: border-box;
     overflow-y: scroll;
