@@ -28,7 +28,12 @@
   {% include "partials/corporatepartner.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { bg: 'images/breaker4.jpg' } %}
+  {% set horizontalsection = {  type: 'quote',
+                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
+                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                                bg: 'images/breaker4.jpg'
+                             }
+  %}
   {% include "partials/horizontalsection.html" %}
 
   <section class="section section_light clientsection">
@@ -42,7 +47,22 @@
     </div>
   </section>
 
-  {% include "shared/awards.html" %}
+  {% set partnerlogos = { one: 'test',
+                          quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
+                          author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                          bg: 'images/breaker6.jpg'
+                       }
+  %}
+  {% include "partials/partnerlogos.html" %}
+
+  {% set theme = { bg: 'dark' } %}
+  {% set horizontalsection = {  type: 'quote',
+                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
+                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                                bg: 'images/breaker6.jpg'
+                             }
+  %}
+  {% include "partials/horizontalsection.html" %}
 
   {% include "shared/contact.html" %}
 
