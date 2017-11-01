@@ -1,4 +1,10 @@
 .footer {
+    .btn {
+    font-size:19px;
+    width:100%;
+    text-align:center;
+    padding: 14px 16px 16px;
+    }
     width: 100%;
     float: left;
     color: $white;
@@ -14,7 +20,7 @@
         color: $white;
     }
     &--col {
-        width: 33%;
+        width: 30%;
         &:not(:last-child) {
             @include fluid(margin-right, 320px, 1366px, 20px, 70px);
         }
@@ -32,8 +38,9 @@
         &_details {
             @include fluid(margin-right, 320px, 1366px, 14px, 16px);
             @include fluid(line-height, 320px, 1366px, 1.5, 2.44);
-            font-weight: 500;
+            font-weight: 700;
             text-align: right;
+            line-height:35px;
         }
     }
     &--bottom {
