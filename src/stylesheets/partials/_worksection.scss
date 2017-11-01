@@ -2,9 +2,10 @@
     width: 100vw;
     position: relative;
     padding-top: 20px;
+    background-color:white;
     h3 {
         font-size: 26px;
-        font-weight: 500;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 50px;
         text-transform: uppercase;
@@ -70,9 +71,10 @@
             opacity: 0;
             h5 {
                 @include fluid(font-size, 600px, 1200px, 18px, 26px);
-                font-weight: 500;
+                font-weight: 700;
                 line-height: normal;
                 letter-spacing: normal;
+                color: $grey;
             }
             
             p {
@@ -80,6 +82,7 @@
                 font-weight: 500;
                 line-height: 1.89;
                 letter-spacing: 1.8px;
+                color: $grey;
             }
 
         }
