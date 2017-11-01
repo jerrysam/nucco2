@@ -1,14 +1,15 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  {% set topsection = { title: "<span>It can be hard enough to</span><span>make someone hear you, until you craft</span><span>that message into a story</span>" } %}
+  {% set topsection = { title: "<span>People don't always like being</span><span>told they have to do things differently.</span><span>Until you craft them a picture</span><span>of their new reality</span>" } %}
   {% include "partials/topsection.html" %}
+
 
   <section class="section section_light basicsection">
     <div class="wrapper">
-      <h3>Let's make it worth repeating</h3>
+      <h3>Let's break through the resistance</h3>
       <p>
-          Stories stand the test of time for a reason - they weave their way into our minds like no other method of transmitting information has ever done. So when you need to be making your external stakeholders stand up and take note of the evolution of your business, you need a story they'll leverage and pass on. We want to help you do that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively.
+          The workplace can get pretty turbulent during times of crisis and change, and it’s in these moments that clear communication is more important than ever. But it also tends to strike with urgency, leaving you in a time-crunch that forces a compromise between quality and speed. Leading with a well-crafted story invites employees to step into the transformation and create it with you, so it's by far the most effective way to inspire long-lasting behavioural change.
       </p>
     </div>
   </section>
@@ -17,18 +18,27 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set horizontalsection = {  type: 'quote',
-                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
-                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
-                                bg: 'images/breaker5.jpg'
+                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
+                                author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
+                                bg: 'images/breaker3.jpg'
                              }
   %}
   {% include "partials/horizontalsection.html" %}
   
   {% set theme = { bg: 'dark' } %}
+  {% set corporatepartner = {   title: 'Your partner in creating change',
+                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop communications strategies and campaigns built on a deep understanding of your business goals, the landscape, and what makes your employees tick. That\'s how our stories create long-lasting behavioural change, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.'
+                             }
+  %}
   {% include "partials/corporatepartner.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { bg: 'images/breaker4.jpg' } %}
+ {% set horizontalsection = {  type: 'quote',
+                                quote: '',
+                                author: '',
+                                bg: 'images/breaker2.jpg'
+                             }
+  %}
   {% include "partials/horizontalsection.html" %}
 
   <section class="section section_light clientsection">
@@ -42,7 +52,14 @@
     </div>
   </section>
 
-  {% include "shared/awards.html" %}
+  {% set theme = { bg: 'dark' } %}
+  {% set horizontalsection = {  type: 'quote',
+                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
+                                author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
+                                bg: 'images/breaker7.jpg'
+                             }
+  %}
+  {% include "partials/horizontalsection.html" %}
 
   {% include "shared/contact.html" %}
 
