@@ -54,7 +54,14 @@
     </div>
   </section>
 
-  {% include "shared/awards.html" %}
+  {% set theme = { bg: 'dark' } %}
+  {% set horizontalsection = {  type: 'quote',
+                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
+                                author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
+                                bg: 'images/breaker10.jpg'
+                             }
+  %}
+  {% include "partials/horizontalsection.html" %}
 
   {% include "shared/contact.html" %}
 
