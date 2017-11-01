@@ -56,37 +56,23 @@
             }
             a {
                 color: inherit;
-                font-weight: 500;
+                font-weight: 400;
                 text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
                 white-space: nowrap;
                 position: relative;
-                @include fluid(font-size, 320px, 1366px, 14px, 21px);
-                @include fluid(letter-spacing, 320px, 1366px, 1px, 4.2px);
-                &:after {
-                    content: '';
-                    display: block;
-                    width: 90%;
-                    height: 2px;
-                    position: absolute;
-                    top: 100%;
-                    left: 1%;
-                    transition: all .22s ease;
-                    border-radius: 2px;
-                    background-color: rgba($white, 0);
+                @include fluid(font-size, 320px, 1366px, 10px, 19px);
+                @include fluid(letter-spacing, 320px, 1366px, 2px, 4.2px);
+                transition: all .22s;
+                &:hover {
+                    color: $sail;
                 }
-                &:hover,
-                &:focus {
-                    &:after {
-                        left: 5%;
-                        background-color: rgba($white, .9);
-                    }
-                }
+                
             }
         }
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
         position: absolute;
         &--nav {
             &-inner {

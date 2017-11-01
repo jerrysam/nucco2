@@ -26,7 +26,7 @@
     &--title {
         @include fluid(font-size, 320px, 1366px, 20px, 36px);
         @include fluid(margin-bottom, 320px, 1366px, 16px, 26px);
-        font-weight: 500;
+        font-weight: 700;
         position: relative;
         z-index: 20;
     }
