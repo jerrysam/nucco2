@@ -6,7 +6,7 @@
     "src": "html",
     "dest": "./"
   },
-
+  
   "static": {
     "src": "static",
     "dest": "./"

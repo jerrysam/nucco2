@@ -44,9 +44,9 @@ abstract class Services {
             $config = nucco_brain_get_config();
             $config = $config['behance'];
 
-            $pdo = self::getPDO();
+            // $pdo = self::getPDO();
             $client  = new BClient($config['api_key']);
-            self::$cache[__FUNCTION__] = new Client($pdo, $client);
+            self::$cache[__FUNCTION__] = $client; // new Client($pdo, $client);
         }
         return self::$cache[__FUNCTION__];
     }

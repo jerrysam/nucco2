@@ -1,9 +1,20 @@
+
 {% extends 'layouts/application.html' %}
 
 {% block content %}
+
+<?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+    require_once __DIR__ . '/nuccobehance/vendor/autoload.php';
+    $client = NuccoBrain\Services::getBehanceClient();
+    $projects = $client->getCollectionProjects(60495231);
+?>
+
   {% set topsection = { title: "<span>People don't always like being</span><span>told they have to do things differently.</span><span>Until you craft them a picture</span><span>of their new reality</span>" } %}
   {% include "partials/topsection.html" %}
-
 
   <section class="section section_light basicsection">
     <div class="wrapper">

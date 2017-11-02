@@ -7,6 +7,11 @@ module.exports = {
   ghPages     : true,
   stylesheets : true,
 
+  html: {
+    extensions: ['html', 'php'],
+    nunjucksRender: { inheritExtension: true }
+  },
+
   javascripts: {
     entry: {
       // files paths are relative to
@@ -16,11 +21,8 @@ module.exports = {
   },
 
   browserSync: {
-    server: {
-      // should match `dest` in
-      // path-config.json
-      baseDir: 'public'
-    }
+    files: ['html', 'php'],
+    proxy: 'localhost:8888'
   },
 
   production: {
