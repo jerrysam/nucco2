@@ -380,3 +380,4 @@ class ClientTest extends PHPUnit_Framework_TestCase {
   } // _getMockRequestInfo
 
 } // ClientTest
+?>

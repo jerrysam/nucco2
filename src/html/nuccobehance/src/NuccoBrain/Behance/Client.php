@@ -73,3 +73,4 @@ class Client {
         return $result;
     }
 }
+?>

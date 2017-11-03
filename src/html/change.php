@@ -3,6 +3,7 @@
 
 {% block content %}
 
+<!-- htmlmin:ignore -->
 <?php
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
@@ -12,6 +13,7 @@
     $client = NuccoBrain\Services::getBehanceClient();
     $projects = $client->getCollectionProjects(60495231);
 ?>
+<!-- htmlmin:ignore -->
 
   {% set topsection = { title: "<span>People don't always like being</span><span>told they have to do things differently.</span><span>Until you craft them a picture</span><span>of their new reality</span>" } %}
   {% include "partials/topsection.html" %}

@@ -10,3 +10,4 @@ return array(
     'Behance\\Client' => $vendorDir . '/behance/api-network/src/Client.php',
     'NuccoBrain\\Behance\\Client' => $baseDir . '/src/NuccoBrain/Behance/Client.php',
 );
+?>

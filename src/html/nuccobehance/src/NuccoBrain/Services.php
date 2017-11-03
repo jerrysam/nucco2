@@ -51,3 +51,4 @@ abstract class Services {
         return self::$cache[__FUNCTION__];
     }
 }
+?>

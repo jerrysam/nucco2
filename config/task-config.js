@@ -6,10 +6,13 @@ module.exports = {
   ghPages     : true,
   stylesheets : true,
 
-  html: {
-    extensions: ['html','php'],
+  html : {
+    extensions: ['html', 'php'],
     htmlmin: {
-      ignoreCustomFragments: [/<\?php.*?\?>/]
+      //ignoreCustomFragments: [/<\?php.*?\?>/]
+    },
+    nunchucksRender: {
+      inheritExtension: true
     }
   },
 
@@ -22,9 +25,9 @@ module.exports = {
   },
 
   browserSync: {
-    proxy: {
-      target: 'localhost:3001',
-      ws: true
+    proxy: 'localhost:3001',
+    ui: {
+      port: 3002
     }
   },
 

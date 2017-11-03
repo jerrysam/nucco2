@@ -14,3 +14,5 @@ function nucco_brain_get_config() {
         ),
     );
 }
+
+?>

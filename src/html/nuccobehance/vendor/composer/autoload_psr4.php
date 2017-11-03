@@ -9,3 +9,4 @@ return array(
     'NuccoBrain\\' => array($baseDir . '/src/NuccoBrain'),
     'Behance\\' => array($vendorDir . '/behance/api-network/src'),
 );
+?>
