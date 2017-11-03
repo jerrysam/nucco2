@@ -1,5 +1,4 @@
 module.exports = {
-  html        : true,
   images      : true,
   fonts       : true,
   static      : true,
@@ -8,8 +7,10 @@ module.exports = {
   stylesheets : true,
 
   html: {
-    extensions: ['html', 'php'],
-    nunjucksRender: { inheritExtension: true }
+    extensions: ['html','php'],
+    htmlmin: {
+      ignoreCustomFragments: [/<\?php.*?\?>/]
+    }
   },
 
   javascripts: {
@@ -21,8 +22,10 @@ module.exports = {
   },
 
   browserSync: {
-    files: ['html', 'php'],
-    proxy: 'localhost:8888'
+    proxy: {
+      target: 'localhost:3001',
+      ws: true
+    }
   },
 
   production: {
