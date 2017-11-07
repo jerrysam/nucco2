@@ -18,3 +18,107 @@
 //         "strokeColor": "#e09b99"
 //     }).lazylinepainter('paint');
 // });
+
+/* 
+ * Lazy Line Painter - Path Object 
+ * Generated using 'SVG to Lazy Line Converter'
+ * 
+ * http://lazylinepainter.info 
+ * Copyright 2013, Cam O'Connell  
+ *  
+ */ 
+ 
+var pathObj = {
+	/*
+	*   ADD ICOs HERE
+	*/
+    "ico1_1": {
+        "strokepath": [
+            {
+                "path": "M52.29,116.26s6.12-8.16,5.61-25.5",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M40,107.59a50.5,50.5,0,0,0,3.06-16.83C43.11,81.59,49.74,77,56.88,77s14.79,4.59,15.3,13.77-.51,15.81-5.1,29.07",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M83.9,116.26c.51-3.06,9.49-34.19-8.16-47.42-16.32-12.24-30.6-3.57-32.13-2.55s-12.75,8.16-15.3,22.95",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M24.75,62.21S42.69,41.53,68.61,49.46c25,7.65,33.15,25.5,33.15,49",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M31.89,38.75c5.1-2,50.48-21.42,79.55,28.56",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M49.74,19.89c4.08-1,30.09-5.1,51,13.26",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M98.81,1H126.3a9.73,9.73,0,0,1,9.7,9.7V38.59",
+                "duration": 300,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M136,99.21V126.3a9.73,9.73,0,0,1-9.7,9.7H98.81",
+                "duration": 300,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M38.19,136H10.7A9.73,9.73,0,0,1,1,126.3V99.21",
+                "duration": 300,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M1,38.59V10.7A9.73,9.73,0,0,1,10.7,1H38.19",
+                "duration": 300,
+                "strokeColor": "#FFFFFF"
+            }
+        ],
+        "dimensions": {
+            "width": 137,
+            "height": 137
+        }
+    }
+}; 
+ 
+ 
+/* 
+ Setup and Paint your lazyline! 
+ */ 
+ 
+function paintLine(){ 
+ $('#ico1_1').lazylinepainter( 
+ {
+    "svgData": pathObj,
+    "strokeWidth": 2,
+    'strokeCap': 'round',
+}).lazylinepainter('paint');
+/* 
+Duplicate for more ICOs beyond this line.
+ */  
+ };
+
+ var onlyOnce = true;
+
+$(window).scroll(function() {
+   var hT = $('#ico1_1').offset().top,
+       hH = $('#ico1_1').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH) && onlyOnce){
+   	  onlyOnce = false;
+      paintLine();
+   }
+});
+
