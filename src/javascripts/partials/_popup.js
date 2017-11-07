@@ -2,7 +2,7 @@ import magnific from 'magnific-popup'
 
 
 $(document).ready(function () {
-    $('#topvideo').magnificPopup({
+    $('.js-topvideo').magnificPopup({
         items: {
             src: 'http://vimeo.com/135051328'
         },
