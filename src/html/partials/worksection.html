@@ -2,6 +2,21 @@
     <div class="wrapper">
         <h3>Our work</h3>
         <ul class="worksection--inner">
+
+        <?php foreach ($projects as $project): ?>
+            <li class="item worksection--item worksection--item_half" style="background-image: url('<?php echo $project->covers->{'404'} ?>')">
+                <a href="javascript:;" class="worksection--item-inner">
+                    <h5><?php echo preg_replace('/([^|]*) |/', '$1', $project->name) ?></h5>
+                </a>
+            </li>
+        <?php endforeach ?>
+
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <h3>Our work</h3>
+        <ul class="worksection--inner">
             <li class="worksection--item worksection--item_half" style="background-image: url('images/works/edf.jpg')">
                 <a href="javascript:;" class="worksection--item-inner">
                     <h5>EDF</h5>

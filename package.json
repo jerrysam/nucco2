@@ -5,7 +5,7 @@
   "author": "Mika Labs",
   "homepage": "http://snchvn.github.io",
   "scripts": {
-    "start": "yarn run blendid",
+    "start": "trap 'kill %1; kill %2' SIGINT; php -t public -S localhost:3001 & yarn run blendid",
     "build": "yarn run blendid -- build",
     "deploy": "cd public/ && now --static --public"
   },
@@ -14,7 +14,8 @@
     "jquery": "^3.2.1",
     "magnific-popup": "^1.1.0",
     "modal-video": "^2.2.0",
-    "paroller.js": "^1.2.0"
+    "paroller.js": "^1.2.0",
+    "yarn": "^1.2.1"
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4"
