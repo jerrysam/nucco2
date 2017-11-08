@@ -1,6 +1,20 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
+
+  <!-- htmlmin:ignore -->
+  <?php
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
+
+      require_once __DIR__ . '/nuccobehance/vendor/autoload.php';
+      $client = NuccoBrain\Services::getBehanceClient();
+      $projects = $client->getCollectionProjects(60495231);
+  ?>
+  <!-- htmlmin:ignore -->
+
+
   {% set topsection = { title: "<span>It can be hard enough to</span><span>make someone hear you, until you craft</span><span>that message into a story</span>" } %}
   {% include "partials/topsection.html" %}
 

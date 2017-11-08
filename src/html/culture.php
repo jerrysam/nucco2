@@ -1,6 +1,20 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
+
+  <!-- htmlmin:ignore -->
+  <?php
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(E_ALL);
+
+      require_once __DIR__ . '/nuccobehance/vendor/autoload.php';
+      $client = NuccoBrain\Services::getBehanceClient();
+      $projects = $client->getCollectionProjects(60495231);
+  ?>
+  <!-- htmlmin:ignore -->
+
+
   {% set topsection = { title: "<span>Sometimes the things you need to say</span><span>are a little... well, boring. Until you craft</span><span>that message into a story</span>" } %}
 
 
@@ -8,7 +22,7 @@
 
   <section class="section section_light basicsection">
     <div class="wrapper">
-      <h3>Let's make it worth repeating</h3>
+      <h3>Let's make it worth repeating <?php echo("hello world") ?></h3>
       <p>
           Whether it's onboarding clients or delivering a series of training videos to your team, there's a far greater chance of your point being heard, actioned and shared if you tell the story well. And in helping them to get the message, you improve the overall brand experience for customers and employees because they know how to get the best from it. So it's time to bring those dull but essential operational messages to life, using whatever technology your story needs.
 
