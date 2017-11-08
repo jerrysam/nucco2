@@ -11,3 +11,10 @@
 
     }
 })();
+
+
+$('.js-mailbtn').click(function () {
+    $('html, body').animate({
+        scrollTop: $('footer.footer').offset().top
+    }, 1700);
+});
