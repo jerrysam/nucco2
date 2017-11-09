@@ -7,6 +7,7 @@
             <li class="item worksection--item worksection--item_half" style="background-image: url('<?php echo $project->covers->{'404'} ?>')">
                 <a href="javascript:;" class="worksection--item-inner">
                     <h5><?php echo preg_replace('/([^|]*) |/', '$1', $project->name) ?></h5>
+                    <p><?=current($projects) <= $projects[1] ? 'worksection--item_half' : 'worksection--item_third'?></p>
                 </a>
             </li>
         <?php endforeach ?>
