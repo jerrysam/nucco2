@@ -1,7 +1,4 @@
 .threecolsection {
-    #ico1_1{
-  margin: 50px auto;
-}
     width: 100%;
     &--subtitle {
         font-family: 'TheSansOsF';
@@ -23,12 +20,12 @@
         float: left;
         text-align: center;
         svg {
-            height: auto;
+            width: auto;
+            height: 120px;
             display: block;
             margin-right: auto;
             margin-left: auto;
             @include fluid(margin-top, 320px, 1366px, 20px, 50px);
-            @include fluid(max-width, 320px, 1366px, 100px, 150px);
             @include fluid(margin-bottom, 320px, 1366px, 10px, 40px);
         }
     }
