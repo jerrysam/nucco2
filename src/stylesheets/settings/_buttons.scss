@@ -10,8 +10,14 @@
     text-decoration: none;
     color: inherit;
     transition: all .22s ease;
+    &--icon {
+        transition: all .22s ease;
+    }
     &:hover {
         color: $turquoise;
         border-color: $turquoise;
+        .btn--icon {
+            fill: $turquoise;
+        }
     }
 }
