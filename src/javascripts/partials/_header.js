@@ -15,6 +15,6 @@
 
 $('.js-mailbtn').click(function () {
     $('html, body').animate({
-        scrollTop: $('footer.footer').offset().top
+        scrollTop: $('section.contactsection').offset().top
     }, 1700);
 });

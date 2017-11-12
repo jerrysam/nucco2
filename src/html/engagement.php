@@ -40,7 +40,10 @@
   
   {% set theme = { bg: 'dark' } %}
   {% set corporatepartner = {   title: 'Your sidekick in an evolving narrative',
-                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop long-term communications strategies built on a deep understanding of your business goals, the landscape, and what makes your stakeholders tick. That\'s how we get the message to all the right people, without blowing the budget. It\'s how we\'ll put you back in control of your story and make content that stretches beyond its reach, beyond the confines of standard technology. Alongside strategy planning, we offer branding and constant production services. '
+                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop long-term communications strategies built on a deep understanding of your business goals, the landscape, and what makes your stakeholders tick. That\'s how we get the message to all the right people, without blowing the budget. It\'s how we\'ll put you back in control of your story and make content that stretches beyond its reach, beyond the confines of standard technology. Alongside strategy planning, we offer branding and constant production services.',
+                                icon_one: 'engagement_one',
+                                icon_two: 'engagement_two',
+                                icon_three: 'engagement_three'
                              }
   %}
   {% include "partials/corporatepartner.html" %}

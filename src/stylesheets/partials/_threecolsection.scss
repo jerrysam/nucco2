@@ -1,4 +1,9 @@
 .threecolsection {
+    .ainherit {
+        color: $white;
+        text-decoration: none;
+    }
+
     width: 100%;
     &--subtitle {
         font-family: 'TheSansOsF';

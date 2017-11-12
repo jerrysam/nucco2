@@ -69,7 +69,7 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set horizontalsection = { title: 'Hitting the mark',
-                                subtitle: 'John Lewis Partnership / Pension Scheme Campaign',
+                                subtitle: 'John Lewis Partnership / Pension Scheme',
                                 button: 'See more',
                                 bg: 'images/breaker3.jpg'
                              }
@@ -96,7 +96,7 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set horizontalsection = { title: 'Our craft, your story',
-                                subtitle: 'World animal protection / Animals are wildlife. Not entertainers campaign',
+                                subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
                                 button: 'See more',
                                 bg: 'images/breaker4.jpg'
                              }

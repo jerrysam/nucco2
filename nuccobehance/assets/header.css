@@ -1,0 +1,200 @@
+.col-xs-4{
+	padding: 0px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 106px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.mobile_logo {
+    display: block;
+    top: 28px;
+    height: 60px;
+    padding-left: 6px;
+}
+.desktop_logo {
+    display: none;
+}
+@media (min-width: 480px) {
+    .header {
+        overflow: hidden;
+        height: 160px;
+    }
+    .mobile_logo {
+        display: none;
+    }
+    .desktop_logo {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        height: 175px;
+    }
+}
+ .header .inner {
+    width: 100%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0em;
+}
+@media (min-width: 768px) {
+     .header .inner {
+     	width: 90%;
+        padding: 0 1.875em;
+    }
+}
+
+.header img{
+    float: left;
+}
+@media (min-width: 480px) {
+    .header img{
+        height: auto;
+        width: 250px;
+    }
+}
+ 
+.header img {
+    position: relative;
+}
+.header nav {
+    display: block;
+    position: relative;
+}
+ 
+ 
+  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.header nav a {
+    line-height: 10px;
+    color: #fff;
+    font-size: 0.65em;
+}
+
+}
+.header nav a:hover{
+	text-decoration: none !important;
+	color: #4abab9 !important;
+} 
+ 
+.header img {
+	margin:0 auto;
+}
+ 
+.header nav { 
+    
+}
+@media (min-width: 480px) {
+    .header img {
+        float: none;
+    }
+}
+@media (min-width: 768px) {
+  .header img{
+	width: 250px;
+	height: auto;
+}
+  .header nav a {
+    font-size: 1.44em;
+  }
+  
+}
+@media (min-width: 992px) {
+   .header nav a {
+    font-size: 1.6em;
+   } 
+   
+} 
+
+ 
+/* Transitions and class for reduced height */
+.header img,
+.header nav a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+ 
+.header.header-shrink {
+    height: 115px;
+}
+@media (min-width: 768px) {
+.header.header-shrink {
+    height: 130px;
+}
+}
+
+.header.header-shrink nav a {
+    line-height: 40px;
+}
+ 
+.header.header-shrink img{
+    width: 150px;
+	height: auto;
+}
+
+
+.header nav a.link2:hover{
+	color:#788191 !important;
+	}
+
+.header nav a.link3:hover{
+	color:#b8ccd9 !important;
+	}
+
+.mobile-nav {
+    height: 111px;
+    float: right;
+    position: relative;
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: none;
+    background-color: #272827;
+}
+.mobile-nav i {
+    display: block;
+    color: #4abab9;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;    
+    right: 10px;
+}
+.menu-container {
+    background-color: #272827;
+    border-top: 5px solid #4abab9;
+    border-bottom: 5px solid #4abab9;
+    padding-top: 30px;
+    display: none;
+}
+.header .inner a {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+    .header .inner a {
+        font-size: 1em;
+    }
+}
+@media (min-width: 480px) {
+    .mobile-nav {
+        display: none;
+    }
+    .header .inner a {
+        width: 33.333333%;
+        margin-bottom: 0px;
+    }
+    .menu-container {
+        display: block;
+        background-color: transparent;
+        border-bottom: none;
+        border-top: none;
+        padding-top: 0px;
+    }
+}

@@ -43,7 +43,10 @@
   
   {% set theme = { bg: 'dark' } %}
   {% set corporatepartner = {   title: 'Your corporate comms partner',
-                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop long-term communications strategies built on a deep understanding of your business goals, the landscape, and what makes your stakeholders tick. That\'s how we get the message to all the right people, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.'
+                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop long-term communications strategies built on a deep understanding of your business goals, the landscape, and what makes your stakeholders tick. That\'s how we get the message to all the right people, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.',
+                                icon_one: 'culture_one',
+                                icon_two: 'culture_two',
+                                icon_three: 'culture_three'
                              }
   %}
   {% include "partials/corporatepartner.html" %}
