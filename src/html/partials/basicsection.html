@@ -1,12 +1,34 @@
 <section class="section section_{{theme.bg}} basicsection">
     <div class="wrapper">
-        <p>
-            It's a reality of the time we live in that some of the things that have to be said are a little, well... boring, compared to those sensationalist headlines. But we know how much you need to hit the mark.
-        </p>
-        <p>
-            That's why we've spent years in the Nucco Brain studio honing the craft of working a professional message - however ordinary - into a visual narrative that's worth following and passing along. 
-            We blend the old world and the new. The ancient tradition of storytelling and a youthful curiosity for diving headfirst into the latest technologies in content production, animation, VR and AR to design visual experiences that capture the attention of an increasingly distracted audience. 
-            And that's why our clients stick around.
-        </p>
+      <div class="overlay"></div>
+
+        {% if basicsection.icon %}
+            <div class="basicsection--icon {{basicsection.icon}}">
+                <img src="images/icons/{{basicsection.icon}}.svg">
+            </div>
+        {% endif %}
+
+
+        {% if basicsection.title %} <h3 class="basicsection--title">{{basicsection.title}}</h3> {% endif %}
+
+
+        {% if basicsection.firstpara %} <p class="basicsection--firstpara">{{basicsection.firstpara}}</p> {% endif %}
+
+        {% if basicsection.secondpara %} <p class="basicsection--secondpara">{{basicsection.secondpara}}</p> {% endif %}
+
+        {% if basicsection.thirdpara %} <p class="basicsection--thirdpara">{{basicsection.thirdpara}}</p> {% endif %}
+
+        {% if basicsection.fourthpara %} <p class="basicsection--fourthpara">{{basicsection.fourthpara}}</p> {% endif %}
+
+
+        {% if basicsection.italiccenter_parabottom %} <p class="basicsection--italiccenter_parabottom u-tac u-italic">{{basicsection.italiccenter_parabottom}}</p> {% endif %}
+
+
+        {% if basicsection.button %} 
+            <a class="btn btn_border_turquoise btn_color_grey" href="#">
+                {{basicsection.button}}
+            </a>
+        {% endif %}
+
     </div>
 </section>
