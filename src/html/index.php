@@ -1,7 +1,7 @@
 {% extends 'layouts/application.html' %}
 
-{% block content %}
-  {% set topsection = { title: "<span>For stories that make seeing believing</span>" } %}
+  {% block content %}
+  {% set topsection = {     title:        "<span>For stories that make seeing believing</span>" } %}
   {% include "partials/topsection.html" %}
 
 
@@ -20,11 +20,15 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { title: 'Adapting the story',
-                                subtitle: 'Innovate UK / Future predictions',
-                                button: 'See more',
-                                bg: 'images/breaker1.jpg',
-                                popupid: '777'
+  {% set horizontalsection = {  title:        'Adapting the story',
+                                
+                                subtitle:     'Innovate UK / Future predictions',
+                                
+                                button:       'See more',
+                                
+                                bg:            'images/breaker1.jpg',
+                                
+                                popupid:        '777'
                              }
   %}
   {% include "partials/horizontalsection.html" %}
@@ -35,7 +39,7 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { title: 'Challenging the status quo',
+  {% set horizontalsection = {  title: 'Challenging the status quo',
                                 subtitle: 'Deloitte / Vat',
                                 button: 'See more',
                                 bg: 'images/breaker2.jpg'
@@ -48,9 +52,9 @@
   {% set theme = { bg: 'light' } %}
   {% set basicsection = {   icon:         "home_hand_heart",
 
-                            firstpara:    "Big businesses don't tend to prioritise corporate communications in the same way they do marketing. At least\, not until the shit hits the fan. It's always been the least sexy side of the comms function - the rest of the business doesn't really get what you do\, your budget flows down the drain on last-minute campaigns you simply don't have the resource to deliver effectively\, and all those crucial messages you have to deliver go unnoticed.",
+                            firstpara:    "Most businesses don’t prioritise corporate communications in the same way it does direct marketing. At least, not until there’s no other choice. That's a huge missed opportunity for capturing a loyal audience.  With such a reactive strategy, budgets flow down the drain on last-minute campaigns you simply don't have the resource to deliver effectively, and all those crucial messages you need to be heard will keep going unnoticed.",
 
-                            secondpara:   "We’re here to change that\, with stories so good your critics will not only hear you but start sharing your message themselves.",
+                            secondpara:   "There's a better way to do it. Changing the dialogue with stories so good your critics will not only hear you but start sharing your message themselves. We make you the publisher.",
 
                             button: "Make them stop & listen"
                          }
@@ -72,15 +76,15 @@
   {% set theme = { bg: 'dark' } %}
   {% set basicsection = {   icon:         "target_arrow",
 
-                            firstpara:    "We want you to see Nucco Brain as a visual storytelling partner, with you for the long-haul. So when we work together, we'll develop communications strategies and campaigns built on a deep understanding of your business goals, the landscape, and what makes your people tick. That's how our stories create long-lasting behavioural change, without blowing the budget. It's how we get content to stretch beyond its reach, beyond the confines of standard technology.",
+                            firstpara:    "If you choose us as your visual storytelling partner, we’ll stay with you for the long-haul. So, when we work together, we'll develop strategies built on a deep understanding of your business goals and what makes your people tick. That's how our stories create long-lasting behavioural change, without blowing the budget. It’s how a message spreads.",
 
-                            italiccenter_parabottom: "And it's how - when you need to be sure they'll listen\, we'll make sure you're heard."
+                            italiccenter_parabottom: "And it's how - when you need to be sure they'll listen - we'll make sure you're heard."
                          }
   %}
   {% include "partials/basicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { title: 'Our craft, your story',
+  {% set horizontalsection = { title: 'Our craft, your stories',
                                 subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
                                 button: 'See more',
                                 bg: 'images/breaker4.jpg'
@@ -91,7 +95,7 @@
 
 
   {% set partnerlogos = {
-                          subtitle: 'A sentence or two to go here talking about the clients we work with. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismodt.',
+                          subtitle: 'We work with international brands and organisations across a variety of sectors.',
                           imgurl: 'images/client_logos.png'
                          }
   %}
