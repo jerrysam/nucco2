@@ -20,7 +20,7 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  title:        'Adapting the story',
+  {% set breakersection = {  title:        'Adapting the story',
                                 
                                 subtitle:     'Innovate UK / Future predictions',
                                 
@@ -31,7 +31,7 @@
                                 popupid:        '777'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
   
   {% set theme = { bg: 'dark' } %}
@@ -39,13 +39,13 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  title: 'Challenging the status quo',
+  {% set breakersection = {  title: 'Challenging the status quo',
                                 subtitle: 'Deloitte / Vat',
                                 button: 'See more',
                                 bg: 'images/breaker2.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
 
 
@@ -64,13 +64,13 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { title: 'Hitting the mark',
+  {% set breakersection = { title: 'Hitting the mark',
                                 subtitle: 'John Lewis Partnership / Pension Scheme',
                                 button: 'See more',
                                 bg: 'images/breaker3.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
 
   {% set theme = { bg: 'dark' } %}
@@ -84,13 +84,13 @@
   {% include "partials/basicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = { title: 'Our craft, your stories',
+  {% set breakersection = { title: 'Our craft, your stories',
                                 subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
                                 button: 'See more',
                                 bg: 'images/breaker4.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
 
 

@@ -30,32 +30,35 @@
   {% include "partials/worksection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  type: 'quote',
+  {% set breakersection = {  type: 'quote',
                                 quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
                                 author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
                                 bg: 'images/breaker3.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
   
   {% set theme = { bg: 'dark' } %}
   {% set threeiconbasicsection = {  title: 'Your partner in creating change',
-                                    firstpara: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop communications strategies and campaigns built on a deep understanding of your business goals, the landscape, and what makes your employees tick. That\'s how our stories create long-lasting behavioural change, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.',
                                     icon_one: 'change_one',
                                     icon_two: 'change_two',
-                                    icon_three: 'change_three'
+                                    icon_three: 'change_three',
+                                    subtitle_one: 'Formulate a Strategy',
+                                    subtitle_two: 'Content Management',
+                                    subtitle_three: 'Monitor & Adapt',
+                                    firstpara: 'Nucco Brain is a visual storytelling studio\, with you for the long\-haul. We\'ll work with you to develop change communications strategies built on a deep understanding of your business goals and what makes your employees tick. Then we’ll back it up with content production\, leveraging a tailored blend of traditional media and market\-leading technologies like VR and 360 video\, and evolve our methods as we monitor results. That\'s how our stories create long\-lasting behavioural change\, without blowing the budget. It\'s how we get content to stretch beyond its reach.'
                              }
   %}
   {% include "partials/threeiconbasicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
- {% set horizontalsection = {  type: 'quote',
-                                quote: '',
-                                author: '',
+ {% set breakersection = {      type: 'quote',
+                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38\,314 individuals.”',
+                                author: 'Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
                                 bg: 'images/breaker2.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
 
   {% set partnerlogos = {
@@ -67,13 +70,13 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  type: 'quote',
-                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
-                                author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
+  {% set breakersection = {  type: 'quote',
+                                quote: '“The Nucco Brain team came to us via recommendation and they lived up to every bit of their reputation. Throughout the process they have been efficient\, professional\, managed expectations and delivered within budget”',
+                                author: '- James du Boulay (Head of Sale & Marketing at P3P Partners)',
                                 bg: 'images/breaker7.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
   {% include "shared/contact.html" %}
 

@@ -29,13 +29,13 @@
   {% include "partials/worksection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  type: 'quote',
+  {% set breakersection = {  type: 'quote',
                                 quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
                                 author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
                                 bg: 'images/breaker5.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
   
   {% set theme = { bg: 'dark' } %}
   {% set threeiconbasicsection = {    title: 'Your sidekick in an evolving narrative',
@@ -51,13 +51,13 @@
   {% include "partials/threeiconbasicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  type: 'quote',
+  {% set breakersection = {  type: 'quote',
                                 quote: '““The insights fed into our content strategy contributed significantly to us reinventing our approach to content; this coupled with distribution expertise has massively increased our visibility”',
                                 author: '- Pete Wilson (Digital Communications Manager at Innovate UK)',
                                 bg: 'images/breaker4.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
 
   {% set partnerlogos = {
@@ -68,13 +68,13 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set horizontalsection = {  type: 'quote',
+  {% set breakersection = {  type: 'quote',
                                 quote: '"Nucco Brain is a fantastic creative team to work with. Their level of deep understanding of our brand and needs helped us shape our B2B marketing strategy with effective results and great quality of production. We particularly appreciated their storytelling approach throughout the content they produced for us."',
                                 author: '- Lorenzo Rulfo (MD of Book on a Tree LTD)',
                                 bg: 'images/breaker6.jpg'
                              }
   %}
-  {% include "partials/horizontalsection.html" %}
+  {% include "partials/breakersection.html" %}
 
   {% include "shared/contact.html" %}
 

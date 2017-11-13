@@ -1,5 +1,5 @@
 import './partials/_header'
-import './partials/_horizontalsection'
+import './partials/_breakersection'
 import './plugins/jquery.visible.min.js'
 import './partials/_icons'
 import './partials/_popup'

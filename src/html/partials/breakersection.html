@@ -1,0 +1,16 @@
+<section class="section section_{{theme.bg}} breakersection" data-paroller-factor="0.2" style="background-image: url({{breakersection.bg}});">
+
+    {% if breakersection.type == 'quote' %}
+
+        <p class="breakersection--quote">{{breakersection.quote}}</p>
+        <span class="breakersection--author">{{breakersection.author}}</span>
+
+    {% else %}
+
+        {% if breakersection.title %} <h3 class="breakersection--title">{{breakersection.title}}</h3> {% endif %}
+        {% if breakersection.subtitle %} <p class="breakersection--text">{{breakersection.subtitle}}</p> {% endif %}
+        {% if breakersection.button %} <a class="btn" href="javascript:console.log({{breakersection.popupid}});">{{breakersection.button}}</a> {% endif %}
+
+    {% endif %}
+
+</section>
