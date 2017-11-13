@@ -95,7 +95,6 @@
 
 
   {% set partnerlogos = {
-                          subtitle: 'We work with international brands and organisations across a variety of sectors.',
                           imgurl: 'images/client_logos.png'
                          }
   %}

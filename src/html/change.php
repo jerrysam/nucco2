@@ -39,14 +39,14 @@
   {% include "partials/horizontalsection.html" %}
   
   {% set theme = { bg: 'dark' } %}
-  {% set corporatepartner = {   title: 'Your partner in creating change',
-                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop communications strategies and campaigns built on a deep understanding of your business goals, the landscape, and what makes your employees tick. That\'s how our stories create long-lasting behavioural change, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.',
-                                icon_one: 'change_one',
-                                icon_two: 'change_two',
-                                icon_three: 'change_three'
+  {% set threeiconbasicsection = {  title: 'Your partner in creating change',
+                                    firstpara: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop communications strategies and campaigns built on a deep understanding of your business goals, the landscape, and what makes your employees tick. That\'s how our stories create long-lasting behavioural change, without blowing the budget. It\'s how we get content to stretch beyond its reach, beyond the confines of standard technology.',
+                                    icon_one: 'change_one',
+                                    icon_two: 'change_two',
+                                    icon_three: 'change_three'
                              }
   %}
-  {% include "partials/corporatepartner.html" %}
+  {% include "partials/threeiconbasicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
  {% set horizontalsection = {  type: 'quote',

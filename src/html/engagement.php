@@ -14,15 +14,14 @@
   ?>
   <!-- htmlmin:ignore -->
 
-
-  {% set topsection = { title: "<span>It can be hard enough to</span><span>make someone hear you, until you craft</span><span>that message into a story</span>" } %}
+  {% set topsection = { title: "<span>In an era of information overload,</span><span>a boring message is doomed to get lost.</span><span>And so we weave it into a narrative.</span>" } %}
   {% include "partials/topsection.html" %}
 
   <section class="section section_light basicsection">
     <div class="wrapper">
       <h3>Let's make it worth repeating</h3>
       <p>
-          Stories stand the test of time for a reason - they weave their way into our minds like no other method of transmitting information has ever done. So when you need to be making your external stakeholders stand up and take note of the evolution of your business, you need a story they'll leverage and pass on. We want to help you do that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively.
+          Stories stand the test of time for a reason - they work their way into our minds like no other method of transmitting information has ever done. So when you need people to stop scrolling and take note of the evolution of your business, you need a story they'll not only want to leverage, but pass on. We want to help you create that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively and leave your mark.
       </p>
     </div>
   </section>
@@ -39,19 +38,22 @@
   {% include "partials/horizontalsection.html" %}
   
   {% set theme = { bg: 'dark' } %}
-  {% set corporatepartner = {   title: 'Your sidekick in an evolving narrative',
-                                quote: 'Nucco Brain is a visual storytelling studio, with you for the long-haul. We\'ll work with you to develop long-term communications strategies built on a deep understanding of your business goals, the landscape, and what makes your stakeholders tick. That\'s how we get the message to all the right people, without blowing the budget. It\'s how we\'ll put you back in control of your story and make content that stretches beyond its reach, beyond the confines of standard technology. Alongside strategy planning, we offer branding and constant production services.',
-                                icon_one: 'engagement_one',
-                                icon_two: 'engagement_two',
-                                icon_three: 'engagement_three'
+  {% set threeiconbasicsection = {    title: 'Your sidekick in an evolving narrative',
+                                      icon_one: 'engagement_one',
+                                      icon_two: 'engagement_two',
+                                      icon_three: 'engagement_three',
+                                      subtitle_one: 'Content Strategy',
+                                      subtitle_two: 'Brand Identity',
+                                      subtitle_three: 'Content Production',
+                                      firstpara: "Nucco Brain is a visual storytelling studio, with you for the long-haul. We'll work with you to develop long-term communications strategies built on a deep understanding of your business goals and what makes your stakeholders tick. Then we’ll back it up with brand development and content production, leveraging a tailored blend of traditional media and market-leading technologies like VR and 360 video. That's how we get the message to all the right people, without blowing the budget. It's how we’ll break through the monotony of information overload."
                              }
   %}
-  {% include "partials/corporatepartner.html" %}
+  {% include "partials/threeiconbasicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
   {% set horizontalsection = {  type: 'quote',
-                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
-                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                                quote: '““The insights fed into our content strategy contributed significantly to us reinventing our approach to content; this coupled with distribution expertise has massively increased our visibility”',
+                                author: '- Pete Wilson (Digital Communications Manager at Innovate UK)',
                                 bg: 'images/breaker4.jpg'
                              }
   %}
@@ -59,7 +61,6 @@
 
 
   {% set partnerlogos = {
-                          subtitle: 'A sentence or two to go here talking about the clients we work with. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismodt.',
                           imgurl: 'images/client_logos.png'
                          }
   %}
@@ -68,8 +69,8 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set horizontalsection = {  type: 'quote',
-                                quote: '“Lycamobile and I are 100% satisfied with their work. We value our relationship with Nucco Brain and we have been continuously working with them ever since our first project”',
-                                author: '- Parthipan Ragunathan (Global Head of Marketing Strategy PLanning at Lycamobile Group)',
+                                quote: '"Nucco Brain is a fantastic creative team to work with. Their level of deep understanding of our brand and needs helped us shape our B2B marketing strategy with effective results and great quality of production. We particularly appreciated their storytelling approach throughout the content they produced for us."',
+                                author: '- Lorenzo Rulfo (MD of Book on a Tree LTD)',
                                 bg: 'images/breaker6.jpg'
                              }
   %}

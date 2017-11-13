@@ -13,7 +13,7 @@
 })();
 
 
-$('.js-mailbtn').click(function () {
+$('.js-scrolltocontact').click(function () {
     $('html, body').animate({
         scrollTop: $('section.contactsection').offset().top
     }, 1700);

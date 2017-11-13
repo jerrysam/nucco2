@@ -1,4 +1,4 @@
-.corporatepartner {
+.threeiconbasicsection {
     .wrapper {
         max-width: 700px;
         text-align: center;
@@ -8,6 +8,12 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+    }
+    h4 {
+        @include fluid(font-size, 320px, 1366px, 18px, 26px);
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 50px;
     }
     &--icons {
         display: flex;
