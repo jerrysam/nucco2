@@ -1,5 +1,6 @@
 <?php
-	require_once __DIR__ . '/../../../vendor/autoload.php';
+echo "<div>TRY</div>";exit; // go
+	require_once __DIR__ . '/../../vendor/autoload.php';
 	$client = NuccoBrain\Services::getBehanceClient();
 
     // Query project.

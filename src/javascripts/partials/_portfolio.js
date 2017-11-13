@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
 				function createPopupContent( data ) {
 					return '<div class="item-detail item-popup-block clearfix">' +
 						'<div class="item-info">' +
@@ -86,7 +87,7 @@ $( document ).ready(function() {
 */
 						// Portfolio Popup
 						if( $.fn.magnificPopup ) {
-							$('.worksection').find( '.item-link' ).magnificPopup({
+							$('.worksection').find( '.worksection--item-inner' ).magnificPopup({
 								type: 'ajax',
 								ajax: {
 									settings: {
@@ -98,11 +99,29 @@ $( document ).ready(function() {
 								overflowY: 'scroll',
 								callbacks: {
 									
-									parseAjax: function( jqXHR ) {
-										var response = $.parseJSON( jqXHR.responseText );
-										jqXHR.responseText = createPopupContent( response );
+									parseAjax: function( mfpResponse ) {
+										console.log(mfpResponse);
+										mfpResponse.data = createPopupContent( mfpResponse.data );
 									},
-									
+									updateStatus: function( data ) {
+										if( data.status === 'ready' ) {
+											if( $.fn.fitVids ) {
+												$( this.contentContainer ).find( '.item-popup-block .media' ).fitVids();
+											}
+
+											if( $.fn.cycle ) {
+												$( this.contentContainer ).find( '.item-media.cycle-slider' ).cycle({
+													slides: '> .media',
+													swipe: true
+												});
+											}
+										}
+									},
+									close: function() {
+										if( $.fn.cycle ) {
+											$( this.contentContainer ).find( '.item-media.cycle-slider' ).cycle( 'destroy' );
+										}
+									}
 								}
 							});
 						}
