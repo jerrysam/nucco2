@@ -3,101 +3,28 @@
    Item media Styling
 ============================================================================= */
 
-.item-detail .item-media .black{
- border-top:0px solid black;
- border-bottom:0px solid black;
-}
-
-.item-media img {
+.mfp-content > .item-popup-block {
+  padding: 3%;  
+  font-family: TheSansOsF;
+  h3 {
+    font-family: Futura;
+  }
+  .item-media img {
   max-width: 100%;
-}
-
-@media (max-width: 767px) {
-  .item-detail .item-media .black {
- border-top:0px solid black;
- border-bottom:0px solid black;
-}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .item-detail .item-media .black {
- border-top:15px solid black;
- border-bottom:15px solid black;
-}
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .item-detail .item-media .black {
- border-top:15px solid black;
- border-bottom:15px solid black;
-}
-}
-@media (min-width: 1200px) {
-  .item-detail .item-media .black {
- border-top:40px solid black;
- border-bottom:40px solid black;
-}
-}
-
-.item-detail .item-media .media {
- width: 90%;
- margin: 2% auto;
-}
-
-
-/* ==========================================================================
-   Item detail Styling
-============================================================================= */
-
-
-.item-detail .item-info {
-  padding: 30px 30px 10px;
-}
-
-.item-detail .item-info .title {
-  line-height: 1;
-  margin-top: 0;
-}
-
-.item-detail .item-info .item-like {
-  float: right;
-  height: 37px;
-}
-
-.item-detail .item-info .item-like [class*="icon-"] {
-  display: inline-block;
-  line-height: 37px;
-}
-
-.item-detail .item-info .item-like:hover [class*="icon-"] {
-  color: #fcb3b3;
-}
-
-
-.item-detail .item-info .view-work {
-  margin: 0 auto;
-}
-
-.item-info p{
-  margin: 1% 5%;
-  font-size: 16px;
-}
-
-@media (max-width: 767px) {
-  .item-info p{
-    text-align: justify;
+  margin: 3% auto;
+  display: block;
+  }
+  .item-info {
+    margin: 20px;
+  }
+  hr {
+    margin: 20px 0;
+  }
+  .media:last-of-type, .media:first-of-type {
+    padding: 30px;
+    margin: 0 10%;
   }
 }
-
-.item-info .title small{
-  font-family: "Economica", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-}
-.item-detail .item-info .view-work:after {
-  font-family: "Futura_Light", Helvetica, Arial, sans-serif;
-  content: ' →';
-}
-
-
-
 
 
 /* ==========================================================================
