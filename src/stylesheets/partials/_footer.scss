@@ -12,6 +12,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        width: 100%;
     }
     &--top {
         @include fluid(padding-top, 320px, 1366px, 30px, 100px);
@@ -46,11 +47,10 @@
         }
         &_details {
             width: 25%;
-            @include fluid(margin-right, 320px, 1366px, 14px, 16px);
-            @include fluid(line-height, 320px, 1366px, 1.5, 2.44);
             font-weight: 700;
             text-align: right;
             line-height:35px;
+            font-size: 14px;
         }
     }
     &--bottom {
@@ -89,7 +89,7 @@
             }
         }
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         &--top {
             .wrapper {
                 flex-direction: column;
