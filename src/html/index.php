@@ -7,29 +7,31 @@
 
 
   {% set theme = { bg: 'light' } %}
-  {% set basicsection = {   icon:         "nb_brain_logo",
+  {% set basicsection = {
+      icon:         "nb_brain_logo",
 
-                            title:        "We'll make sure you're heard",
+      title:        "We'll make sure you're heard",
 
-                            firstpara:    "It's a reality of the time we live in that some of the things that have to be said are a little\, well... boring\, compared to those sensationalist headlines. But we know how much you need to hit the mark.",
+      firstpara:    "It's a reality of the time we live in that some of the things that have to be said are a little\, well... boring\, compared to those sensationalist headlines. But we know how much you need to hit the mark.",
 
-                            secondpara:   "That's why we've spent years in the Nucco Brain studio honing the craft of working a professional message - however ordinary - into a visual narrative that's worth following and passing along. We blend the old world and the new. The ancient tradition of storytelling and a youthful curiosity for diving headfirst into the latest technologies in content production\, animation\, VR and AR to design visual experiences that capture the attention of an increasingly distracted audience. And that's why our clients stick around."
-                         }
+      secondpara:   "That's why we've spent years in the Nucco Brain studio honing the craft of working a professional message - however ordinary - into a visual narrative that's worth following and passing along. We blend the old world and the new. The ancient tradition of storytelling and a youthful curiosity for diving headfirst into the latest technologies in content production\, animation\, VR and AR to design visual experiences that capture the attention of an increasingly distracted audience. And that's why our clients stick around."
+}
   %}
   {% include "partials/basicsection.html" %}
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = {  title:        'Adapting the story',
-                                
-                                subtitle:     'Innovate UK / Future predictions',
-                                
-                                button:       'See more',
-                                
-                                bg:            'images/breaker1.jpg',
-                                
-                                popupid:        '777'
-                             }
+  {% set breakersection = {     
+                            title:        'Adapting the story',
+                            
+                            subtitle:     'Innovate UK / Future predictions',
+                            
+                            button:       'See more',
+                            
+                            bg:           'images/breaker1.jpg',
+                            
+                            popupid:      '33791522'
+                         }
   %}
   {% include "partials/breakersection.html" %}
 
@@ -39,12 +41,18 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = {  title: 'Challenging the status quo',
-                                subtitle: 'Deloitte / Vat',
-                                button: 'See more',
-                                bg: 'images/breaker2.jpg'
-                             }
-  %}
+  {% set breakersection = {     
+                            title:    'Challenging the status quo',
+
+                            subtitle: 'Deloitte / Vat',
+
+                            button:   'See more',
+                            
+                            bg:       'images/breaker2.jpg',
+
+                            popupid:      '33791522'
+                          }
+%}
   {% include "partials/breakersection.html" %}
 
 
@@ -65,10 +73,15 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = { title: 'Hitting the mark',
-                                subtitle: 'John Lewis Partnership / Pension Scheme',
-                                button: 'See more',
-                                bg: 'images/breaker3.jpg'
-                             }
+                            
+                            subtitle: 'John Lewis Partnership / Pension Scheme',
+                            
+                            button: 'See more',
+                            
+                            bg: 'images/breaker3.jpg',
+
+                            popupid:      '33791522'
+                          }
   %}
   {% include "partials/breakersection.html" %}
 
@@ -85,10 +98,15 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = { title: 'Our craft, your stories',
-                                subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
-                                button: 'See more',
-                                bg: 'images/breaker4.jpg'
-                             }
+                            
+                            subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
+                            
+                            button: 'See more',
+                            
+                            bg: 'images/breaker4.jpg',
+
+                            popupid:      '33791522'
+                          }
   %}
   {% include "partials/breakersection.html" %}
 
