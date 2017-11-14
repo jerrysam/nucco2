@@ -122,7 +122,12 @@
     }
     @media screen and (max-width:600px) {
         &--title {
-            margin-top: 50%;
+            margin-top: 30%;
         }
+    }
+    @media screen and (max-height:300px) {
+            &--btn-inner {
+                display: none;
+            }
     }
 }
