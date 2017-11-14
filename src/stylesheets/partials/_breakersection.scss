@@ -27,17 +27,35 @@
         @include fluid(font-size, 320px, 1366px, 20px, 36px);
         @include fluid(margin-bottom, 320px, 1366px, 16px, 26px);
         font-weight: 700;
-        position: relative;
+        /*position: relative;*/
         z-index: 20;
+        position: absolute;
+        top: calc(50% - 30px);
     }
     &--text {
-        @include fluid(font-size, 320px, 1366px, 14px, 20px);
+        @include fluid(font-size, 320px, 1366px, 9px, 15px);
         @include fluid(margin-bottom, 320px, 1366px, 15px, 23px);
         font-weight: 500;
         line-height: 1.95;
         letter-spacing: 2px;
-        position: relative;
+        /*position: relative;*/
         z-index: 20;
+        color: inherit;
+        position: absolute;
+        bottom: 0;
+    }
+    a {
+        @include fluid(font-size, 320px, 1366px, 9px, 15px);
+        @include fluid(margin-bottom, 320px, 1366px, 15px, 23px);
+        font-weight: 500;
+        line-height: 1.95;
+        letter-spacing: 2px;
+        /*position: relative;*/
+        z-index: 20;
+        color: inherit; 
+    }
+    .popup {
+        margin-left: 50px;
     }
     .btn {
         font-weight: 500;

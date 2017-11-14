@@ -63,7 +63,7 @@
                 white-space: nowrap;
                 position: relative;
                 @include fluid(font-size, 320px, 1366px, 10px, 19px);
-                @include fluid(letter-spacing, 320px, 1366px, 2px, 4.2px);
+                /*@include fluid(letter-spacing, 320px, 1366px, 2px, 4.2px);*/
                 transition: all .22s;
                 &:hover {
                     color: $sail;

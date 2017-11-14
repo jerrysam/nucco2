@@ -6,10 +6,18 @@
         <span class="breakersection--author">{{breakersection.author}}</span>
 
     {% else %}
-
-        {% if breakersection.title %} <h3 class="breakersection--title">{{breakersection.title}}</h3> {% endif %}
-        {% if breakersection.subtitle %} <p class="breakersection--text">{{breakersection.subtitle}}</p> {% endif %}
-        {% if breakersection.button %} <a class="btn" href="javascript:console.log({{breakersection.popupid}});">{{breakersection.button}}</a> {% endif %}
+		
+        {% if breakersection.title %}
+        	<h3 class="breakersection--title">{{breakersection.title}}</h3>
+    	{% endif %}
+        {% if breakersection.subtitle %}
+	        	<p class="breakersection--text">
+	        		{{breakersection.subtitle}}
+                    <a class="popup" href="./nuccobehance/php/work/work.php?itemId={{breakersection.popupid}}">
+	        			{{breakersection.button}}
+	        		</a>
+        		</p>
+    	{% endif %}
 
     {% endif %}
 

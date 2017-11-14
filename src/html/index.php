@@ -30,7 +30,7 @@
                             
                             bg:           'images/breaker1.jpg',
                             
-                            popupid:      '777'
+                            popupid:      '33791522'
                          }
   %}
   {% include "partials/breakersection.html" %}
@@ -48,7 +48,9 @@
 
                             button:   'See more',
                             
-                            bg:       'images/breaker2.jpg'
+                            bg:       'images/breaker2.jpg',
+
+                            popupid:      '33791522'
                           }
 %}
   {% include "partials/breakersection.html" %}
@@ -71,10 +73,15 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = { title: 'Hitting the mark',
-                                subtitle: 'John Lewis Partnership / Pension Scheme',
-                                button: 'See more',
-                                bg: 'images/breaker3.jpg'
-                             }
+                            
+                            subtitle: 'John Lewis Partnership / Pension Scheme',
+                            
+                            button: 'See more',
+                            
+                            bg: 'images/breaker3.jpg',
+
+                            popupid:      '33791522'
+                          }
   %}
   {% include "partials/breakersection.html" %}
 
@@ -91,10 +98,15 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = { title: 'Our craft, your stories',
-                                subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
-                                button: 'See more',
-                                bg: 'images/breaker4.jpg'
-                             }
+                            
+                            subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
+                            
+                            button: 'See more',
+                            
+                            bg: 'images/breaker4.jpg',
+
+                            popupid:      '33791522'
+                          }
   %}
   {% include "partials/breakersection.html" %}
 
