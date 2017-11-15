@@ -10,26 +10,28 @@
         text-transform: uppercase;
     }
     h4 {
-        @include fluid(font-size, 320px, 1366px, 18px, 26px);
-        font-weight: 500;
+        @include fluid(font-size, 320px, 1366px, 14px, 22px);
+        font-weight: 700;
         text-transform: uppercase;
         margin-top: 50px;
     }
     .animicon {
-        height: 120px;
+        height: 150px;
         @include fluid(margin-top, 320px, 1366px, 20px, 50px);
         @include fluid(margin-bottom, 320px, 1366px, 10px, 40px);
     }
     &--icons {
         display: flex;
-        align-items: center;
         justify-content: space-between;
         list-style: none;
         margin: 70px auto;
         li {
-            @include fluid(max-width, 320px, 1000px, 80px, 150px);
+            width: 29%;
+            margin: 0 2%;
             svg {
+                @include fluid(max-width, 320px, 1000px, 80px, 150px);
                 width: 100%;
+                margin: auto;
                 display: block;
             }
         }

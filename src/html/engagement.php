@@ -42,9 +42,9 @@
                                       icon_one: 'engagement_one',
                                       icon_two: 'engagement_two',
                                       icon_three: 'engagement_three',
-                                      subtitle_one: 'Content Strategy',
-                                      subtitle_two: 'Brand Identity',
-                                      subtitle_three: 'Content Production',
+                                      subtitle_one: 'Content<br/> Strategy',
+                                      subtitle_two: 'Brand<br/>Identity',
+                                      subtitle_three: 'Content<br/>Production',
                                       firstpara: "Nucco Brain is a visual storytelling studio, with you for the long-haul. We'll work with you to develop long-term communications strategies built on a deep understanding of your business goals and what makes your stakeholders tick. Then we’ll back it up with brand development and content production, leveraging a tailored blend of traditional media and market-leading technologies like VR and 360 video. That's how we get the message to all the right people, without blowing the budget. It's how we’ll break through the monotony of information overload."
                              }
   %}

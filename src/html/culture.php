@@ -46,9 +46,9 @@
                                       icon_one: 'culture_one',
                                       icon_two: 'culture_two',
                                       icon_three: 'culture_three',
-                                      subtitle_one: 'Understand Challenge',
-                                      subtitle_two: 'Collaborative Content Production',
-                                      subtitle_three: 'Visualise Knowledge',
+                                      subtitle_one: 'Understand<br/>Challenge',
+                                      subtitle_two: 'Collaborative<br/>Content<br/>Production',
+                                      subtitle_three: 'Visualise<br/>Knowledge',
                                       firstpara: 'Nucco Brain is a visual storytelling studio\, with you for the long\-haul. We\'ll work with you to develop enduring communications processes built on a deep understanding of your business goals and what makes your employees and customers tick. Then we’ll back it up by collaboratively producing materials to visualise your knowledge\, leveraging a blend of traditional media and market\-leading technologies like VR and 360 video. That\'s how we get all the right people on your side\, without blowing the budget. It\'s how we get a simple message to stretch beyond its reach.'
                              }
   %}

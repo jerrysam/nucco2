@@ -43,9 +43,9 @@
                                     icon_one: 'change_one',
                                     icon_two: 'change_two',
                                     icon_three: 'change_three',
-                                    subtitle_one: 'Formulate a Strategy',
-                                    subtitle_two: 'Content Management',
-                                    subtitle_three: 'Monitor & Adapt',
+                                    subtitle_one: 'Formulate<br/>a Strategy',
+                                    subtitle_two: 'Content<br/>Management',
+                                    subtitle_three: 'Monitor<br/>& Adapt',
                                     firstpara: 'Nucco Brain is a visual storytelling studio\, with you for the long\-haul. We\'ll work with you to develop change communications strategies built on a deep understanding of your business goals and what makes your employees tick. Then we’ll back it up with content production\, leveraging a tailored blend of traditional media and market\-leading technologies like VR and 360 video\, and evolve our methods as we monitor results. That\'s how our stories create long\-lasting behavioural change\, without blowing the budget. It\'s how we get content to stretch beyond its reach.'
                              }
   %}

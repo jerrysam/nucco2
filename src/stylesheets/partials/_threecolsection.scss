@@ -28,7 +28,9 @@
         @include fluid(margin-bottom, 320px, 1366px, 10px, 40px);
     }
     .col {
-        width: 33%;
+        width: 29%;
+        margin: 0 
+        2%;
         float: left;
         text-align: center;
         svg {
@@ -40,8 +42,8 @@
         }
     }
     h4 {
-        @include fluid(font-size, 320px, 1366px, 18px, 26px);
-        font-weight: 500;
+        @include fluid(font-size, 320px, 1366px, 14px, 22px);
+        font-weight: 700;
         text-transform: uppercase;
     }
     p {
