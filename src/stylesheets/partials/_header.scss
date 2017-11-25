@@ -24,7 +24,6 @@
             transition: height .22s ease;
         }
         &-inner {
-            width: 100%;
             display: flex;
             flex-wrap: nowrap;
             list-style: none;
@@ -37,9 +36,24 @@
         &-item {
             display: flex;
             align-items: center;
-            &:not(:last-child) {
-                @include fluid(margin-right, 1000px, 1366px, 5px, 30px);
+            position: relative;
+            &:not(:first-child):not(:last-child) {
+                @include fluid(margin-right, 1000px, 1366px, 20px, 40px);
+                // border-bottom: 1px solid;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 0%;
+                  border-bottom: 2px solid #b3d4fc;
+                  transition: 0.4s;
+                }
+                &:hover:after {
+                  width: 100%;
+                }
             }
+
             &_mail {
                 svg {
                     position: relative;
@@ -49,9 +63,11 @@
                 }
             }
             &_logo {
+                margin-right: auto;
                 img {
+                    height: 30px;
                     position: relative;
-                    top: 2px;
+                    top: 3px;
                 }
             }
             a {
@@ -79,6 +95,9 @@
                 flex-direction: column;
             }
             &-item {
+                &:not(:first-child):not(:last-child) {
+                    margin-right: 0px;
+                }
                 &_logo {
                     width: 100%;
                     a {
