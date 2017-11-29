@@ -15,7 +15,7 @@
   <!-- htmlmin:ignore -->
 
 
-  {% set topsection = { title: "<span>Sometimes the things you need to say</span><span>are a little, well... boring.</span><span>Until you weave that message</span><span>into a narrative.</span>" } %}
+  {% set topsection = { title: "<span>Important information is</span><span>not always the most engaging,</span><span>until you shape it into a narrative</span>" } %}
 
 
   {% include "partials/topsection.html" %}
@@ -24,7 +24,9 @@
   {% set theme = { bg: 'light' } %}
   {% set basicsection = {
                             title: "Let's make it worth hearing",
-                            firstpara: "Whether it's onboarding clients or delivering a series of training videos to your team\, there's a far greater chance of your point being heard\, actioned and shared if you tell the story well. And in helping them to get the message you shape the entire culture of your business\, improving the brand experience of your customers and employees. You’re helping them to get the best from you. So it's time to bring those dull but essential operational messages to life\, using whatever technology your story needs to make its mark."
+                            firstpara: "Whether it\'s onboarding clients or training your team\, there\'s a far greater chance of your point being heard\, actioned and shared if you tell the story well.
+                            In helping them to get the message you shape the entire culture of your business\, improving the brand experience of your customers and employees. 
+                            It\'s time to bring those dull but essential operational messages to life\, using whatever technology your story needs to make its mark."
                          }
   %}
   {% include "partials/basicsection.html" %}
@@ -34,7 +36,7 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = {  type: 'quote',
-                                quote: '“Absolute pleasure and professionalism in combination with artistic talents and production value. One of the most enjoyable and favourable collaboration of my professional career up to date”',
+                                quote: '“Absolute pleasure and professionalism in combination with artistic talents and production value.”',
                                 author: '- Ilija Smiljanic (Brand Manager at Nature Immunity)',
                                 bg: 'images/breaker8.jpg'
                              }

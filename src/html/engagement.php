@@ -14,12 +14,12 @@
   ?>
   <!-- htmlmin:ignore -->
 
-  {% set topsection = { title: "<span>In an era of information overload,</span><span>a boring message is doomed to get lost.</span><span>And so we weave it into a narrative.</span>" } %}
+  {% set topsection = { title: "<span>In an era of information overload,</span><span>a flat message is doomed to get lost.</span>" } %}
   {% include "partials/topsection.html" %}
 
   <section class="section section_light basicsection">
     <div class="wrapper">
-      <h3>Let's make it worth repeating</h3>
+      <h3>That's why we weave it into a narrative.</h3>
       <p>
           Stories stand the test of time for a reason - they work their way into our minds like no other method of transmitting information has ever done. So when you need people to stop scrolling and take note of the evolution of your business, you need a story they'll not only want to leverage, but pass on. We want to help you create that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively and leave your mark.
       </p>
@@ -38,7 +38,7 @@
   {% include "partials/breakersection.html" %}
   
   {% set theme = { bg: 'dark' } %}
-  {% set threeiconbasicsection = {    title: 'Your sidekick in an evolving narrative',
+  {% set threeiconbasicsection = {    title: 'Let\'s make it worth repeating',
                                       icon_one: 'engagement_one',
                                       icon_two: 'engagement_two',
                                       icon_three: 'engagement_three',
@@ -52,7 +52,7 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = {  type: 'quote',
-                                quote: '““The insights fed into our content strategy contributed significantly to us reinventing our approach to content; this coupled with distribution expertise has massively increased our visibility”',
+                                quote: '“The insights fed into our content strategy contributed significantly to us reinventing our approach to content; this has massively increased our visibility”',
                                 author: '- Pete Wilson (Digital Communications Manager at Innovate UK)',
                                 bg: 'images/breaker4.jpg'
                              }
@@ -69,8 +69,8 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = {  type: 'quote',
-                                quote: '"Nucco Brain is a fantastic creative team to work with. Their level of deep understanding of our brand and needs helped us shape our B2B marketing strategy with effective results and great quality of production. We particularly appreciated their storytelling approach throughout the content they produced for us."',
-                                author: '- Lorenzo Rulfo (MD of Book on a Tree LTD)',
+                                quote: '"Nucco Brain is a fantastic creative team to work with. Their deep understanding of our brand and needs helped us shape our B2B marketing strategy with effective results and great quality of production."',
+                                author: '- Lorenzo Rulfo (MD of Book on a Tree)',
                                 bg: 'images/breaker6.jpg'
                              }
   %}

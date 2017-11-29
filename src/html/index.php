@@ -1,7 +1,7 @@
 {% extends 'layouts/application.html' %}
 
   {% block content %}
-  {% set topsection = {     title:        "<span>For stories that make seeing believing</span>" } %}
+  {% set topsection = {     title:        "<span>Our craft, your stories</span>" } %}
   {% include "partials/topsection.html" %}
 
 
@@ -10,11 +10,14 @@
   {% set basicsection = {
       icon:         "nb_brain_logo",
 
-      title:        "We'll make sure you're heard",
+      title:        "We\'ll make sure you\'re heard",
 
-      firstpara:    "It's a reality of the time we live in that some of the things that have to be said are a little\, well... boring\, compared to those sensationalist headlines. But we know how much you need to hit the mark.",
+      firstpara:    "It\'s a reality of the time we live in that some of the things that have to be said are a little flat\, compared to those sensationalist headlines. But we know how much you need to hit the mark.",
 
-      secondpara:   "That's why we've spent years in the Nucco Brain studio honing the craft of working a professional message - however ordinary - into a visual narrative that's worth following and passing along. We blend the old world and the new. The ancient tradition of storytelling and a youthful curiosity for diving headfirst into the latest technologies in content production\, animation\, VR and AR to design visual experiences that capture the attention of an increasingly distracted audience. And that's why our clients stick around."
+      secondpara:   "That\'s why we\'ve spent years in the Nucco Brain studio mastering the craft of working a professional message \- however ordinary \- into a visual narrative that\'s worth following and passing along.",
+
+      thirdpara:   "We blend the old world and the new: the ancient tradition of storytelling and a youthful curiosity for diving headfirst into the latest technologies in content production\, animation\, VR and AR. We design visual experiences that capture the attention of an increasingly distracted audience. And that\'s why our clients stick around."
+      
 }
   %}
   {% include "partials/basicsection.html" %}
@@ -60,9 +63,10 @@
   {% set theme = { bg: 'light' } %}
   {% set basicsection = {   icon:         "home_hand_heart",
 
-                            firstpara:    "Most businesses don’t prioritise corporate communications in the same way it does direct marketing. At least, not until there’s no other choice. That's a huge missed opportunity for capturing a loyal audience.  With such a reactive strategy, budgets flow down the drain on last-minute campaigns you simply don't have the resource to deliver effectively, and all those crucial messages you need to be heard will keep going unnoticed.",
+                            firstpara:    "Most businesses don’t prioritise corporate communications in the same way they do direct marketing. At least, not until there’s no other choice. That's a huge missed opportunity for capturing a loyal audience. With such a reactive approach, budgets flow down the drain on last\-minute campaigns you simply don't have the resource to deliver effectively. 
+                            All those crucial messages that need to be heard will keep going unnoticed. ",
 
-                            secondpara:   "There's a better way to do it. Changing the dialogue with stories so good your critics will not only hear you but start sharing your message themselves. We make you the publisher.",
+                            secondpara:   "There's a better way to do it. Changing the dialogue with stories so good your critics will not only hear you, but start sharing your message themselves.",
 
                             button: "Make them stop & listen"
                          }

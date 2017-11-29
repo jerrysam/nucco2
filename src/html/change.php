@@ -15,14 +15,15 @@
 ?>
 <!-- htmlmin:ignore -->
 
-  {% set topsection = { title: "<span>People don't always like being</span><span>told they have to do things differently.</span><span>Until you craft them a picture</span><span>of their new reality</span>" } %}
+  {% set topsection = { title: "<span>People don't like to be told</span><span>they have to do things differently,</span><span>but evolution is necessecary</span>" } %}
   {% include "partials/topsection.html" %}
 
   <section class="section section_light basicsection">
     <div class="wrapper">
       <h3>Let's break through the resistance</h3>
       <p>
-          The workplace can get pretty turbulent during times of crisis and change, and it’s in these moments that clear communication is more important than ever. But it also tends to strike with urgency, leaving you in a time-crunch that forces a compromise between quality and speed. Leading with a well-crafted story invites employees to step into the transformation and create it with you, so it's by far the most effective way to inspire long-lasting behavioural change.
+          The workplace can get pretty turbulent during times of crisis and change, and it’s in these moments that clear communication is more important than ever. Transformation also tends to strike with urgency, leaving you in a time-crunch that forces a compromise between quality and speed. 
+          Leading with a well-crafted story invites employees to step into the transformation and create it with you. It's by far the most effective way to inspire long-lasting behavioural change.
       </p>
     </div>
   </section>
@@ -31,7 +32,7 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = {  type: 'quote',
-                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38,314 individuals.”',
+                                quote: '“Nucco Brain supported us by producing a series of videos and infographics to simplify the pension explanations, so all 83000 partners could engage with and consider their own savings.”',
                                 author: '- Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
                                 bg: 'images/breaker3.jpg'
                              }
@@ -53,8 +54,8 @@
 
   {% set theme = { bg: 'dark' } %}
  {% set breakersection = {      type: 'quote',
-                                quote: '“We have now managed to engage Partners to increase contributions to their defined contribution pension accounts up to 38\,314 individuals.”',
-                                author: 'Jenny Hilling (Business Change Manager at the John Lewis Partnership)',
+                                quote: '“I was impressed with their creative thinking\, their positive attitude and their willingness to go the extra mile”',
+                                author: 'Daniele Orner-Ginor (Head of Digital Intelligence\, BBH)',
                                 bg: 'images/breaker2.jpg'
                              }
   %}
@@ -71,8 +72,8 @@
 
   {% set theme = { bg: 'dark' } %}
   {% set breakersection = {  type: 'quote',
-                                quote: '“The Nucco Brain team came to us via recommendation and they lived up to every bit of their reputation. Throughout the process they have been efficient\, professional\, managed expectations and delivered within budget”',
-                                author: '- James du Boulay (Head of Sale & Marketing at P3P Partners)',
+                                quote: '“The Nucco Brain team came to us via recommendation and they lived up to every bit of their reputation.”',
+                                author: '- James du Boulay (Head of Sale \& Marketing at P3P Partners)',
                                 bg: 'images/breaker7.jpg'
                              }
   %}
