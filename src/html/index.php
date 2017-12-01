@@ -44,7 +44,7 @@
                             
                             bg:           'images/breaker1.jpg',
                             
-                            popupid:      '33791522'
+                            popupid:      '37408001'
                          }
   %}
   {% include "partials/breakersection.html" %}
@@ -64,7 +64,7 @@
                             
                             bg:       'images/breaker2.jpg',
 
-                            popupid:      '33791522'
+                            popupid:  '51018983'
                           }
 %}
   {% include "partials/breakersection.html" %}
@@ -112,15 +112,15 @@
   {% include "partials/basicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = { title: 'Our craft, your stories',
+  {% set breakersection = { title:    'Our craft, your stories',
                             
                             subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
                             
-                            button: 'See more',
+                            button:   'See more',
                             
-                            bg: 'images/breaker4.jpg',
+                            bg:       'images/breaker4.jpg',
 
-                            popupid:      '33791522'
+                            popupid:  '30208817'
                           }
   %}
   {% include "partials/breakersection.html" %}
