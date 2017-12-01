@@ -1,5 +1,10 @@
 {% extends 'layouts/application.html' %}
 
+{% set title = " for Constant Engagement" %}
+{% block head %}
+  <meta name="description" content="Your sidekick in an evolving narrative. We specialise in content strategy, brand identity, and content production to help you develop long-term communications strategies built on a deep understanding of your business goals and what makes your stakeholders tick.">
+{% endblock %}
+
 {% block content %}
 
   <!-- htmlmin:ignore -->

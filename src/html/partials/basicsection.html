@@ -2,12 +2,15 @@
     <div class="wrapper">
       <div class="overlay"></div>
 
-        {% if basicsection.icon %}
-            <div class="basicsection--icon {{basicsection.icon}}">
-                <img src="images/icons/{{basicsection.icon}}.svg">
+        {% if basicsection.staticicon %}
+            <div class="basicsection--icon {{basicsection.staticicon}}">
+                <img src="images/icons/{{basicsection.staticicon}}.svg">
             </div>
         {% endif %}
 
+        {% if basicsection.icon %}
+            <div id="{{basicsection.icon}}" class="animicon basicsection--icon {{basicsection.icon}}"></div>
+        {% endif %}
 
         {% if basicsection.title %} <h3 class="basicsection--title">{{basicsection.title}}</h3> {% endif %}
 

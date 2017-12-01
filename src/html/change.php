@@ -1,5 +1,11 @@
-
 {% extends 'layouts/application.html' %}
+
+{% set title = " for Driving Change" %}
+{% block head %}
+  <meta name="description" content="Your partner in driving change. We formulate a strategy, manage content production, and monitor changes to help you develop change communications strategies built on a deep understanding of your business goals and what makes your employees tick.">
+
+{% endblock %}
+
 
 {% block content %}
 

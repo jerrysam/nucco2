@@ -1,6 +1,11 @@
 {% extends 'layouts/application.html' %}
 
-  {% block content %}
+{% set title = " Studio" %}
+{% block head %}
+  <meta name="description" content="Nucco Brain is a visual storytelling studio based in London. We specialise in crafting professional messages into visual narratives worth following and passing along. We blend the ancient tradition of storytelling with the latest technologies in content production, video, animation, VR and AR to design unique visual experiences for brands and corporations.">
+{% endblock %}
+
+{% block content %}
   {% set topsection = {     title:        "<span>Our craft, your stories</span>" } %}
   {% include "partials/topsection.html" %}
 
@@ -8,7 +13,7 @@
 
   {% set theme = { bg: 'light' } %}
   {% set basicsection = {
-      icon:         "nb_brain_logo",
+      staticicon:         "nb_brain_logo",
 
       title:        "We\'ll make sure you\'re heard",
 
@@ -91,7 +96,7 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set basicsection = {   icon:         "target_arrow",
+  {% set basicsection = {   icon:         "home_target",
 
                             firstpara:    "If you choose us as your visual storytelling partner, we’ll stay with you for the long-haul. So, when we work together, we'll develop strategies built on a deep understanding of your business goals and what makes your people tick. That's how our stories create long-lasting behavioural change, without blowing the budget. It’s how a message spreads.",
 

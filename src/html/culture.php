@@ -1,5 +1,10 @@
 {% extends 'layouts/application.html' %}
 
+{% set title = " for Shaping Culture" %}
+{% block head %}
+  <meta name="description" content="Your corporate comms partner. We understand the challenges, collaborate with you to produce content, and visualise knowledge to help you develop enduring communications processes built on a deep understanding of your business goals and what makes your employees and customers tick.">
+{% endblock %}
+
 {% block content %}
 
   <!-- htmlmin:ignore -->
