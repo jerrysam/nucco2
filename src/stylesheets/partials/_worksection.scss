@@ -75,6 +75,8 @@
                 line-height: normal;
                 letter-spacing: normal;
                 color: $grey;
+                width: -webkit-fill-available;
+                word-wrap: break-word;
             }
             
             p {
