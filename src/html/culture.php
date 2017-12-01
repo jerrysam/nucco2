@@ -20,8 +20,12 @@
   <!-- htmlmin:ignore -->
 
 
-  {% set topsection = { title: "<span>Important information is</span><span>not always the most engaging,</span><span>until you shape it into a narrative</span>" } %}
-
+  {% set topsection = {
+                        title: "<span>Important information is</span><span>not always the most engaging,</span><span>until you shape it into a narrative</span>",
+  
+                        video: "corp-reel"
+                      }
+  %}
 
   {% include "partials/topsection.html" %}
 

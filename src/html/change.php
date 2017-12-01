@@ -21,7 +21,13 @@
 ?>
 <!-- htmlmin:ignore -->
 
-  {% set topsection = { title: "<span>People don't like to be told</span><span>they have to do things differently,</span><span>but evolution is necessecary</span>" } %}
+  {% set topsection = { 
+                        title: "<span>People don't like to be told</span><span>they have to do things differently,</span><span>but evolution is necessecary</span>",
+  
+                        video: "corp-reel"
+                      }
+  %}
+
   {% include "partials/topsection.html" %}
 
   <section class="section section_light basicsection">

@@ -6,7 +6,13 @@
 {% endblock %}
 
 {% block content %}
-  {% set topsection = {     title:        "<span>Our craft, your stories</span>" } %}
+  {% set topsection = {     
+                        title:        "<span>Our craft, your stories</span>",
+  
+                        video: "main-reel"
+                      }
+  %}
+  
   {% include "partials/topsection.html" %}
 
 

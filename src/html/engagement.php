@@ -19,7 +19,13 @@
   ?>
   <!-- htmlmin:ignore -->
 
-  {% set topsection = { title: "<span>In an era of information overload,</span><span>a flat message is doomed to get lost.</span>" } %}
+  {% set topsection = { 
+                        title: "<span>In an era of information overload,</span><span>a flat message is doomed to get lost.</span>",
+  
+                        video: "main-reel"
+                      }
+  %}
+  
   {% include "partials/topsection.html" %}
 
   <section class="section section_light basicsection">
