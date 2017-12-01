@@ -70,7 +70,7 @@
 
   {% set partnerlogos = {
                           subtitle: 'A sentence or two to go here talking about the clients we work with. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismodt.',
-                          imgurl: 'images/client_logos.png'
+                          imgurl: 'images/value2_clientlogos.png'
                          }
   %}
   {% include "partials/partnerlogos.html" %}

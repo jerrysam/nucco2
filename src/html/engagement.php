@@ -66,7 +66,7 @@
 
 
   {% set partnerlogos = {
-                          imgurl: 'images/client_logos.png'
+                          imgurl: 'images/value1_clientlogos.png'
                          }
   %}
   {% include "partials/partnerlogos.html" %}
