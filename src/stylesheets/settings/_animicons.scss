@@ -1,0 +1,5 @@
+.animicon {
+    height: 150px;
+    @include fluid(margin-top, 320px, 1366px, 20px, 50px);
+    @include fluid(margin-bottom, 320px, 1366px, 10px, 40px);
+}

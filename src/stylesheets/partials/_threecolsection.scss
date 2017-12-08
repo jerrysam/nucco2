@@ -3,9 +3,6 @@
         color: $white;
         text-decoration: none;
     }
-    .animicon {
-        height: 170px;
-    }
     width: 100%;
     &--subtitle {
         font-family: 'TheSansOsF';
@@ -24,8 +21,6 @@
     }
     .animicon {
         height: 120px;
-        @include fluid(margin-top, 320px, 1366px, 20px, 50px);
-        @include fluid(margin-bottom, 320px, 1366px, 10px, 40px);
     }
     .col {
         width: 29%;
