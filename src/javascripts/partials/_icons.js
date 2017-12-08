@@ -376,87 +376,6 @@ var pathObj = {
     "engagement_one": {
         "strokepath": [
             {
-                "path": "M75.7,97.1c0,2.6,0.3,17.2-5.9,27",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M85.4,127.9c1.6-4.7,7.1-20.9,5.4-30.8s-7.1-14.1-16.2-14.6S61,87.8,60,97.1s-1.8,14.3-3.2,17.9",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M103.3,124.2c1.1-5.3,9.5-37-8.7-50.3c-15.2-11.1-26.9-6.9-34-2.7c-5.9,3.4-12.4,8.6-16.2,24.3",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M40.6,66.9c4.4-4.1,22-22.4,49.3-12.6c26.3,9.5,32.3,29.9,32.3,51",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M132.5,72.3c-3.9-6.2-28.1-51.7-84.3-30.3",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M67.1,22c4.6-0.8,29.3-6.5,54.1,14",
-                "duration": 300,
-                "strokeColor": "#4AB8B7"
-            },
-            {
-                "path": "M15.3,105.9V135c0,4.2,3.4,10.3,10.3,10.3h29.6",
-                "duration": 600,
-                "strokeColor": "#FFFFFF"
-            },
-            {
-                "path": "M119.2,145.5h29.1c4.2,0,10.3-3.4,10.3-10.3v-29.6",
-                "duration": 600,
-                "strokeColor": "#FFFFFF"
-            },
-            {
-                "path": "M158.7,41.6V12.5c0-4.2-3.4-10.3-10.3-10.3h-29.6",
-                "duration": 600,
-                "strokeColor": "#FFFFFF"
-            },
-            {
-                "path": "M54.8,2H25.7c-4.2,0-10.3,3.4-10.3,10.3v29.6",
-                "duration": 600,
-                "strokeColor": "#FFFFFF"
-            }
-        ],
-        "dimensions": {
-            "width": 174,
-            "height": 148
-        }
-    },
-    "engagement_two": {
-        "strokepath": [
-            {
-                "path": "M171,73.75s-37.64-56-84-56-84,56-84,56,36.81,56,84,56,84-56,84-56",
-                "duration": 1000,
-                "strokeColor": "#FFFFFF"
-            },
-            {
-                "path": "M87,38.75c15.79,0,35,11.52,35,35,0,22.17-18.32,35-35,35s-35-12.52-35-35c0-23.38,19.21-35,35-35",
-                "duration": 1000,
-                "strokeColor": "#FFFFFF"
-            },
-            {
-                "path": "M77.12,56.19V90.31s28.2-17,28.2-17.06-28.2-17.06-28.2-17.06",
-                "duration": 1000,
-                "strokeColor": "#4AB8B7"
-            }
-        ],
-        "dimensions": {
-            "width": 174,
-            "height": 148
-        }
-    },
-    "engagement_three": {
-        "strokepath": [
-            {
                 "path": "M 87.6 2 L 87.6 12.2",
                 "duration": 500,
                 "strokeColor": "#FFFFFF"
@@ -534,6 +453,87 @@ var pathObj = {
             {
                 "path": "M84.5,60.8l-0.9-10c0,0,25,20.7,1.1,42.7",
                 "duration": 200,
+                "strokeColor": "#4AB8B7"
+            }
+        ],
+        "dimensions": {
+            "width": 174,
+            "height": 148
+        }
+    },
+    "engagement_two": {
+        "strokepath": [
+            {
+                "path": "M75.7,97.1c0,2.6,0.3,17.2-5.9,27",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M85.4,127.9c1.6-4.7,7.1-20.9,5.4-30.8s-7.1-14.1-16.2-14.6S61,87.8,60,97.1s-1.8,14.3-3.2,17.9",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M103.3,124.2c1.1-5.3,9.5-37-8.7-50.3c-15.2-11.1-26.9-6.9-34-2.7c-5.9,3.4-12.4,8.6-16.2,24.3",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M40.6,66.9c4.4-4.1,22-22.4,49.3-12.6c26.3,9.5,32.3,29.9,32.3,51",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M132.5,72.3c-3.9-6.2-28.1-51.7-84.3-30.3",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M67.1,22c4.6-0.8,29.3-6.5,54.1,14",
+                "duration": 300,
+                "strokeColor": "#4AB8B7"
+            },
+            {
+                "path": "M15.3,105.9V135c0,4.2,3.4,10.3,10.3,10.3h29.6",
+                "duration": 600,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M119.2,145.5h29.1c4.2,0,10.3-3.4,10.3-10.3v-29.6",
+                "duration": 600,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M158.7,41.6V12.5c0-4.2-3.4-10.3-10.3-10.3h-29.6",
+                "duration": 600,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M54.8,2H25.7c-4.2,0-10.3,3.4-10.3,10.3v29.6",
+                "duration": 600,
+                "strokeColor": "#FFFFFF"
+            }
+        ],
+        "dimensions": {
+            "width": 174,
+            "height": 148
+        }
+    },
+    "engagement_three": {
+        "strokepath": [
+            {
+                "path": "M171,73.75s-37.64-56-84-56-84,56-84,56,36.81,56,84,56,84-56,84-56",
+                "duration": 1000,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M87,38.75c15.79,0,35,11.52,35,35,0,22.17-18.32,35-35,35s-35-12.52-35-35c0-23.38,19.21-35,35-35",
+                "duration": 1000,
+                "strokeColor": "#FFFFFF"
+            },
+            {
+                "path": "M77.12,56.19V90.31s28.2-17,28.2-17.06-28.2-17.06-28.2-17.06",
+                "duration": 1000,
                 "strokeColor": "#4AB8B7"
             }
         ],

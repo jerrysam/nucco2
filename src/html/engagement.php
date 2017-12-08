@@ -20,7 +20,7 @@
   <!-- htmlmin:ignore -->
 
   {% set topsection = { 
-                        title: "<span>In an era of information overload,</span><span>a flat message is doomed to get lost.</span>",
+                        title: "<span>In an era of information overload,</span><span>a flat message is doomed to get lost</span>",
   
                         video: "main-reel"
                       }
@@ -30,7 +30,7 @@
 
   <section class="section section_light basicsection">
     <div class="wrapper">
-      <h3>That's why we weave it into a narrative.</h3>
+      <h3>That's why we weave it into a narrative</h3>
       <p>
           Stories stand the test of time for a reason - they work their way into our minds like no other method of transmitting information has ever done. So when you need people to stop scrolling and take note of the evolution of your business, you need a story they'll not only want to leverage, but pass on. We want to help you create that, visually, and beat the time-crunch that's always hanging over the corporate comms team to communicate effectively and leave your mark.
       </p>

@@ -6,4 +6,14 @@
     <img draggable="false" src="images/award05.png" alt="">
     <img draggable="false" src="images/award06.png" alt="">
     <img draggable="false" src="images/award07.png" alt="">
+
+    {% if awards.subtitle %}
+    	<p class="breakersection--text">
+    		{{awards.subtitle}}
+            <a class="popup" href="./nuccobehance/php/work/work.php?itemId={{awards.popupid}}">
+    			{{awards.button}}
+    		</a>
+		</p>
+	{% endif %}
+
 </section>

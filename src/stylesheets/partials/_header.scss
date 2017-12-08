@@ -40,7 +40,7 @@
             &:not(:first-child):not(:last-child) {
                 @include fluid(margin-right, 1000px, 1366px, 20px, 40px);
                 // border-bottom: 1px solid;
-                &:after {
+                a:after {
                   content: '';
                   position: absolute;
                   bottom: 0;
@@ -49,7 +49,7 @@
                   border-bottom: 2px solid #b3d4fc;
                   transition: 0.4s;
                 }
-                &:hover:after {
+                a:hover:after {
                   width: 100%;
                 }
             }
@@ -79,7 +79,7 @@
                 text-transform: uppercase;
                 white-space: nowrap;
                 position: relative;
-                @include fluid(font-size, 320px, 1366px, 10px, 19px);
+                @include fluid(font-size, 320px, 1366px, 15px, 19px);
                 /*@include fluid(letter-spacing, 320px, 1366px, 2px, 4.2px);*/
                 transition: all .22s;
                 &:hover {
@@ -93,14 +93,38 @@
         position: absolute;
         &--nav {
             &-inner {
-                flex-direction: column;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                height: 110px;
             }
             &-item {
-                &:not(:first-child):not(:last-child) {
-                    margin-right: 0px;
+                margin-right: 0px;
+                &:nth-of-type(1) {
+                    order: 1;
+                    width: 30%;
+                    min-width: 135px;
+                }
+                &:nth-of-type(2) {
+                    order: 3;
+                    width: 70%;
+                    margin-top: 5px;
+                }
+                &:nth-of-type(3) {
+                    order: 4;
+                    width: 70%;
+                }
+                &:nth-of-type(4) {
+                    order: 5;
+                    width: 70%;
+                }
+                &:nth-of-type(5) {
+                    order: 2;
+                    width: 30%;
+                }
+                a {
+                    margin: auto;
                 }
                 &_logo {
-                    width: 100%;
                     a {
                         width: 100%;
                         &:after {
@@ -111,6 +135,9 @@
                         margin: 0 auto 10px;
                         display: block;
                     }
+                }            
+                &_mail {
+                    margin-left: 0;
                 }
             }
         }

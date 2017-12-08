@@ -133,7 +133,14 @@
   %}
   {% include "partials/partnerlogos.html" %}
 
+  {% set awards = {
+                              subtitle: 'At First Sight',
+                              
+                              button:   'See more',
 
+                              popupid:  '29509945'
+                            }
+    %}
   {% include "shared/awards.html" %}
 
   {% include "shared/contact.html" %}
