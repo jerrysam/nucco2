@@ -1,24 +1,23 @@
 <section class="section section_{{theme.bg}} breakersection" data-paroller-factor="0.2" style="background-image: url({{breakersection.bg}});">
+    <div class="wrapper">
+        {% if breakersection.type == 'quote' %}             <!-- Quote type of section -->
+            <p class="breakersection--quote">{{breakersection.quote}}</p>
+            <span class="breakersection--author">{{breakersection.author}}</span>
 
-    {% if breakersection.type == 'quote' %}
+        {% else %}                                          <!-- Portfolio type of section -->
+            {% if breakersection.title %}
+            	<h3 class="breakersection--title">{{breakersection.title}}</h3>
+        	{% endif %}
+            {% if breakersection.subtitle %}
+    	        	<p class="breakersection--text">
+    	        		{{breakersection.subtitle}}
+                        <a class="popup" href="./nuccobehance/php/work/work.php?itemId={{breakersection.popupid}}">
+    	        			{{breakersection.button}}
+    	        		</a>
+            		</p>
+        	{% endif %}
 
-        <p class="breakersection--quote">{{breakersection.quote}}</p>
-        <span class="breakersection--author">{{breakersection.author}}</span>
-
-    {% else %}
-		
-        {% if breakersection.title %}
-        	<h3 class="breakersection--title">{{breakersection.title}}</h3>
-    	{% endif %}
-        {% if breakersection.subtitle %}
-	        	<p class="breakersection--text">
-	        		{{breakersection.subtitle}}
-                    <a class="popup" href="./nuccobehance/php/work/work.php?itemId={{breakersection.popupid}}">
-	        			{{breakersection.button}}
-	        		</a>
-        		</p>
-    	{% endif %}
-
-    {% endif %}
+        {% endif %}
+    </div>
 
 </section>

@@ -63,6 +63,7 @@
         letter-spacing: 1.6px;
         padding: 14px 29px 13px;
         @include fluid(font-size, 320px, 1366px, 14px, 16px);
+        @include fluid(padding-top padding-bottom, 320px, 1366px, 10px, 70px);
         text-decoration: none;
         display: block;
         position: relative;
@@ -98,5 +99,8 @@
     &--author {
         @include fluid(font-size, 320px, 1366px, 14px, 18px);
         line-height: 1.67;
+    }
+    @media screen and (max-width: 900px) {
+        background-size: auto 135%;
     }
 }
