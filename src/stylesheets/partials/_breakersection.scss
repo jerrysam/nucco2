@@ -100,7 +100,9 @@
         @include fluid(font-size, 320px, 1366px, 14px, 18px);
         line-height: 1.67;
     }
-    @media screen and (max-width: 900px) {
-        background-size: auto 135%;
+    
+    background-size: auto 130%;
+    @media screen and (max-width: 600px) {
+        background-size: auto 150%;
     }
 }
