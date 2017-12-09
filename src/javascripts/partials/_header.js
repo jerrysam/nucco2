@@ -2,7 +2,7 @@
 
     const header = document.querySelectorAll('.header--nav')[0];
     const scrollTop = 50;
-    const breakpoint = 1000;
+    const breakpoint = 800;
 
     window.onscroll = function () {
 
