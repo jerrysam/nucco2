@@ -101,7 +101,9 @@
         line-height: 1.67;
     }
     
+    @media screen and (max-width: 1200px) {
     background-size: auto 130%;
+    }
     @media screen and (max-width: 600px) {
         background-size: auto 150%;
     }
