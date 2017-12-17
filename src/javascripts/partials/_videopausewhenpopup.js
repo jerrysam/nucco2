@@ -5,14 +5,22 @@
  */
 
 
-$.magnificPopup.instance.open = function() {
+$.magnificPopup.instance.open = function(obj) {
 
-  console.log("hello world");
-  // $('video')[0].pause();
+  $('video')[0].pause();
 
   // You may call parent ("original") method like so:
-  $.magnificPopup.proto.open.call(this /*, optional arguments */);
+  $.magnificPopup.proto.open.call(this, obj /*, optional arguments */);
 };
 
 
 // Do the "close" function too
+
+
+$.magnificPopup.instance.close = function(obj) {
+
+  $('video')[0].play();
+
+  // You may call parent ("original") method like so:
+  $.magnificPopup.proto.close.call(this, obj /*, optional arguments */);
+};

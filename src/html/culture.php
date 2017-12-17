@@ -15,13 +15,13 @@
 
       require_once __DIR__ . '/nuccobehance/vendor/autoload.php';
       $client = NuccoBrain\Services::getBehanceClient();
-      $projects = $client->getCollectionProjects(168437579);
+      $projects = $client->getCollectionProjects(60495105);
   ?>
   <!-- htmlmin:ignore -->
 
 
   {% set topsection = {
-                        title: "<span>Important information is</span><span>not always the most engaging,</span><span>until you shape it into a narrative</span>",
+                        title: "<span>Hey Nick</span><span>the portfolio in this pages\' worksection</span><span>is connected to the \"Startups\" collection in Behance</span>",
   
                         video: "corp-reel"
                       }
@@ -32,10 +32,8 @@
 
   {% set theme = { bg: 'light' } %}
   {% set basicsection = {
-                            title: "Let's make it worth hearing",
-                            firstpara: "Whether it\'s onboarding clients or training your team\, there\'s a far greater chance of your point being heard\, actioned and shared if you tell the story well.
-                            In helping them to get the message you shape the entire culture of your business\, improving the brand experience of your customers and employees. 
-                            It\'s time to bring those dull but essential operational messages to life\, using whatever technology your story needs to make its mark."
+                            title: "Spacings are removed",
+                            firstpara: "The margin \(below images\) and padding \(on edges\/sides of the popup\) are removed"
                          }
   %}
   {% include "partials/basicsection.html" %}

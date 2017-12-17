@@ -10,7 +10,7 @@
         ?>
             <li class="item worksection--item <?=$i <= 2 ? 'worksection--item_half' : 'worksection--item_third'?>" style="background-image: url('<?php echo $project->covers->{'404'} ?>')">
                 <a href="./nuccobehance/php/work/work.php?itemId=<?php echo $project->id ?>" class="worksection--item-inner">
-                    <h5><?php echo preg_replace('/([^|]*) |/', '$1', $project->name) ?></h5>
+                    <h5><?php echo $project->name ?></h5>
                 </a>
             </li>
         <?php endforeach ?>
