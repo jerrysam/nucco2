@@ -22,7 +22,7 @@
 <!-- htmlmin:ignore -->
 
   {% set topsection = { 
-                        title: "<span>People don't like to be told</span><span>they have to do things differently,</span><span>but evolution is necessecary</span>",
+                        title: "<span>People don't like to be told</span><span>they have to do things differently,</span><span>but evolution is necessary</span>",
   
                         video: "corp-reel"
                       }
