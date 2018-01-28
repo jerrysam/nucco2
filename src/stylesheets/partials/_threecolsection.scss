@@ -37,7 +37,7 @@
         }
     }
     h4 {
-        @include fluid(font-size, 320px, 1366px, 14px, 22px);
+        @include fluid(font-size, 320px, 1366px, 18px, 22px);
         font-weight: 700;
         text-transform: uppercase;
     }

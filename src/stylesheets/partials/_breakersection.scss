@@ -37,7 +37,7 @@
         z-index: $breakersectionItems;
     }
     &--text, a {
-        @include fluid(font-size, 320px, 1366px, 9px, 15px);
+        @include fluid(font-size, 320px, 1366px, 12px, 15px);
         line-height: 1.95;
         letter-spacing: 2px;
         color: inherit;
@@ -82,7 +82,7 @@
         margin-bottom: 20px;
     }
     &--author {
-        @include fluid(font-size, 320px, 1366px, 10px, 18px);
+        @include fluid(font-size, 320px, 1366px, 14px, 18px);
         line-height: 1.67;
     }
 

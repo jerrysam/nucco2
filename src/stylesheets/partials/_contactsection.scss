@@ -36,20 +36,14 @@
                 text-decoration: underline;
             }
         }
-        &-item {
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
+        &-item:not(:last-child) {
+            margin-bottom: 15px;
         }
         @media screen and (max-width: 700px) {
             margin-right: 0;
             &-item {
                 float: left;
-                width: calc(50% - 10px);
-                &:nth-child(1),
-                &:nth-child(3) {
-                    margin-right: 20px;
-                }
+                min-width: 50%;
             }
         }
     }
@@ -68,4 +62,5 @@
             display: block;
         }
     }
+
 }
