@@ -35,7 +35,8 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = {     
+  {% set breakersection = { type: 'portfolio',
+
                             title:        'Adapting the story',
                             
                             subtitle:     'Innovate UK / Future predictions',
@@ -55,7 +56,8 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = {     
+  {% set breakersection = { type: 'portfolio',
+
                             title:    'Challenging the status quo',
 
                             subtitle: 'Deloitte / Vat',
@@ -87,7 +89,9 @@
 
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = { title: 'Hitting the mark',
+  {% set breakersection = { type: 'portfolio',
+
+                            title: 'Hitting the mark',
                             
                             subtitle: 'John Lewis Partnership / Pension Scheme',
                             
@@ -112,7 +116,9 @@
   {% include "partials/basicsection.html" %}
 
   {% set theme = { bg: 'dark' } %}
-  {% set breakersection = { title:    'Our craft, your stories',
+  {% set breakersection = { type: 'portfolio',
+
+                            title:    'Our craft, your stories',
                             
                             subtitle: 'World animal protection / Animals are wildlife. Not entertainers',
                             
@@ -133,7 +139,24 @@
   %}
   {% include "partials/partnerlogos.html" %}
 
-  {% set awards = {
+
+  {% set theme = { bg: 'dark' } %}
+  {% set breakersection = { type: 'awards',
+                            
+                            subtitle: 'At First Sight',
+                            
+                            button:   'See more',
+                            
+                            bg:       'images/breaker6.jpg',
+
+                            popupid:  '29509945'
+                          }
+  %}
+  {% include "partials/breakersection.html" %}
+
+
+<!--   {% set awards = {           type: 'awards',
+
                               subtitle: 'At First Sight',
                               
                               button:   'See more',
@@ -141,7 +164,7 @@
                               popupid:  '29509945'
                             }
     %}
-  {% include "shared/awards.html" %}
+  {% include "shared/awards.html" %} -->
 
   {% include "shared/contact.html" %}
 
