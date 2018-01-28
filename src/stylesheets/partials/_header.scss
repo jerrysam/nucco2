@@ -38,8 +38,8 @@
             align-items: center;
             position: relative;
             &:not(:first-child):not(:last-child) {
-                @include fluid(margin-right, 1000px, 1366px, 20px, 40px);
-                // border-bottom: 1px solid;
+                @include fluid(margin-right, 1000px, 1366px, 10px, 20px);
+                @include fluid(margin-left, 1000px, 1366px, 10px, 20px);
                 a:after {
                   content: '';
                   position: absolute;
@@ -53,7 +53,6 @@
                   width: 100%;
                 }
             }
-
             &_mail {
                 margin-left: auto;
                 svg {
@@ -98,48 +97,53 @@
                 height: 110px;
             }
             &-item {
+                // Removing the margins (left & right, on logo, nav items, and mail icon), which were necessecary for Desktop, but mess up alignments on mobile
                 margin-right: 0px;
-                &:nth-of-type(1) {
-                    order: 1;
+                margin-left: 0px;
+                &:not(:first-child):not(:last-child) {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+                // Re-order the nav items
+                &:nth-of-type(1), &:nth-of-type(5) {
+                    order: 0;
                     width: 30%;
                     min-width: 135px;
                 }
-                &:nth-of-type(2) {
-                    order: 3;
+                &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                    order: 1;
                     width: 70%;
-                    margin-top: 5px;
-                }
-                &:nth-of-type(3) {
-                    order: 4;
-                    width: 70%;
-                }
-                &:nth-of-type(4) {
-                    order: 5;
-                    width: 70%;
-                }
-                &:nth-of-type(5) {
-                    order: 2;
-                    width: 30%;
                 }
                 a {
                     margin: auto;
                 }
-                &_logo {
-                    a {
-                        width: 100%;
-                        &:after {
-                            display: none;
-                        }
-                    }
-                    img {
-                        margin: 0 auto 10px;
-                        display: block;
-                    }
-                }            
-                &_mail {
-                    margin-left: 0;
+                // Fine tune the spacings on tablet
+                &:nth-of-type(2) {
+                    margin-top: 5px;
+                }
+                &_logo img {
+                    margin: 0 auto 10px;
+                    display: block;
                 }
             }
+        }
+    }
+    @media screen and (max-width: 450px) {
+                // Create a one-column design
+        &--nav {
+            &-inner {
+                height: 180px;
+            }
+            &-item {
+                &:nth-of-type(n) {
+                    width: 100%;
+                }
+                // Move the mail icon to the end again
+                &:nth-of-type(5) {
+                    order: 2;
+                }            
+            }
+
         }
     }
 }

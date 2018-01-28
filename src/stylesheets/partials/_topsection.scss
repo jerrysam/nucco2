@@ -1,6 +1,7 @@
 .topsection {
     width: 100vw;
     height: 100vh;
+    min-height: 500px;
     position: relative;
     color: $white;
     .video {
@@ -57,7 +58,7 @@
     &--title {
         font-family: 'Bebas';
         line-height: 1.41;
-        @include fluid(font-size, 720px, 1200px, 20px, 50px);
+        @include fluid(font-size, 720px, 1200px, 20px, 40px);
         text-shadow: 0px 0px 12px rgba($black, .6);
         text-transform: uppercase;
         margin: auto 0 auto;
@@ -122,13 +123,8 @@
         }
     }
     @media screen and (max-width:600px) {
-        &--title {
-            margin-top: 30%;
+        &--content {
+            padding-top: 180px;
         }
-    }
-    @media screen and (max-height:300px) {
-            &--btn-inner {
-                display: none;
-            }
     }
 }
