@@ -26,6 +26,9 @@
         max-width: 167px;
         display: block;
         margin: 0 auto 50px;
+        img {
+            max-width: 100%;
+        }
     }
     h3 {
         font-size: 26px;
