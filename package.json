@@ -21,6 +21,13 @@
     "gulp-gh-pages": "^0.5.4"
   },
   "main": "index.js",
-  "repository": "https://github.com/snchvn/nucco2.git",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snchvn/nucco2.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snchvn/nucco2/issues"
+  },
+  "keywords": []
 }

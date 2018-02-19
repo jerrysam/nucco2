@@ -132,6 +132,7 @@
                 // Create a one-column design
         &--nav {
             &-inner {
+                flex-flow: wrap;
                 height: 180px;
             }
             &-item {
